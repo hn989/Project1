@@ -154,7 +154,7 @@
         </rml:ruler>
       </rml:section-footer>
       <rml:page-header height="760" style="">
-        <rml:field auto-wrap="Yes" font-size="400" font-bold="Yes" left="0" top="0" width="9000" height="700" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Report A (Main Report)</rml:control-source>
+        <rml:field auto-wrap="Yes" font-size="400" font-bold="Yes" left="0" top="0" width="9000" height="700" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Report A (Main Report revised)</rml:control-source>
         </rml:field>
         <rml:ruler>
         </rml:ruler>
