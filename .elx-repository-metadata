@@ -13,6 +13,7 @@
   {
     "path" : "/Project1/ABC",
     "tags" : [
+      "ReportPortal-teamA"
     ],
     "acl" : [
       {
@@ -35,7 +36,7 @@
     ],
     "acl" : [
     ],
-    "lastModified" : 1737528984848
+    "lastModified" : 1737532710687
   },
   {
     "path" : "/Project1/DEF",
@@ -73,6 +74,6 @@
     ],
     "acl" : [
     ],
-    "lastModified" : 1737515106560
+    "lastModified" : 1737532632238
   }
 ]
