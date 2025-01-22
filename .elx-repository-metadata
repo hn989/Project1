@@ -1,0 +1,63 @@
+[
+  {
+    "path" : "/Project1",
+    "tags" : [
+    ],
+    "acl" : [
+      {
+        "by" : "role-678f45ac819c9613e22955ae",
+        "write" : true
+      }
+    ]
+  },
+  {
+    "path" : "/Project1/ABC",
+    "tags" : [
+    ],
+    "acl" : [
+      {
+        "by" : "role-678f45ac819c9613e22955ae",
+        "write" : true
+      }
+    ]
+  },
+  {
+    "path" : "/Project1/ABC/abc.ds",
+    "tags" : [
+    ],
+    "acl" : [
+    ],
+    "lastModified" : 1737293211686
+  },
+  {
+    "path" : "/Project1/ABC/reportA.rml",
+    "tags" : [
+    ],
+    "acl" : [
+    ],
+    "lastModified" : 1737528984848
+  },
+  {
+    "path" : "/Project1/DEF",
+    "tags" : [
+    ],
+    "acl" : [
+    ]
+  },
+  {
+    "path" : "/Project1/DEF/def.ds",
+    "tags" : [
+    ],
+    "acl" : [
+    ],
+    "lastModified" : 1737293588807
+  },
+  {
+    "path" : "/Project1/DEF/reportD.rml",
+    "tags" : [
+    ],
+    "acl" : [
+    ],
+    "lastModified" : 1737515106560
+  }
+]
