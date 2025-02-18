@@ -1,0 +1,323 @@
+<?xml version="1.0" standalone="yes"?>
+
+<rml:report keep-page-count="Yes" cache-all-properties="Yes" grid-enabled="Yes" grid-visible="No" grid-x="100" grid-y="100" description="Showing the features of Lebal, Image,Data Field, DataGrid, CheckBox, Line,Retangle and RTF" disable-csv-auto-wrap="No" disable-excel-auto-wrap="No" style="" xmlns:rml="http://www.elixirtech.com/ElixirReport/RML">
+  <rml:metadata version="2" location="/ElixirSamples/Report/RML/Copy of Form.rml">
+  </rml:metadata>
+  <rml:security encrypted="No" read-only="No" hide-internals="No">
+  </rml:security><rml:function-definitions xml:space="preserve" language="javascript"></rml:function-definitions>
+  <rml:layout-master-set>
+    <rml:page-setup name="Default" paper="iso-a4" page-width="11905" page-height="16837" orientation="Portrait" horizontal-page-count="1" margin-top="520" margin-left="520" margin-bottom="520" margin-right="520" column-count="1" column-spacing="0" row-spacing="0" column-layout="Down Then Across">
+    </rml:page-setup>
+  </rml:layout-master-set>
+  <rml:parameters>
+  </rml:parameters>
+  <rml:datasources>
+    <rml:datasource name="Barcode" datasource-name="/ElixirSamples/Report/RML/datasource/Barcode.ds" tabulate="Yes">
+      <rml:parameters>
+      </rml:parameters>
+      <rml:filters>
+      </rml:filters>
+    </rml:datasource>
+  </rml:datasources>
+  <rml:styles>
+    <rml:style name="detail">
+      <rml:item name="Common.KeepTogether" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="field">
+      <rml:item name="TextElement.FontSize" value="240">
+      </rml:item>
+      <rml:item name="TextElement.FontName" value="Serif">
+      </rml:item>
+      <rml:item name="Grid.AutoWrap" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="field.literal" base-name="field">
+      <rml:item name="RawElement.Shrinkable" value="No">
+      </rml:item>
+      <rml:item name="RawElement.Growable" value="No">
+      </rml:item>
+    </rml:style>
+    <rml:style name="group-footer">
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="group-header">
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="rect">
+      <rml:item name="RawElement.BorderStyle" value="Solid">
+      </rml:item>
+      <rml:item name="Rectangle.BorderLeft" value="Yes">
+      </rml:item>
+      <rml:item name="Common.BackgroundColor" value="rgb(255,255,255)">
+      </rml:item>
+      <rml:item name="Rectangle.BorderRight" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.BorderColor" value="rgb(0,0,0)">
+      </rml:item>
+      <rml:item name="Rectangle.BorderBottom" value="Yes">
+      </rml:item>
+      <rml:item name="Rectangle.BorderTop" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="sub-report">
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="table">
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+    </rml:style>
+  </rml:styles>
+  <rml:stylesheets>
+  </rml:stylesheets>
+  <rml:sections>
+    <rml:section name="Section 1" page-setup-ref="Default" data-source="Barcode" border-style="None" border-color="Black" show-header="Yes" show-footer="Yes" show-page-header="Yes" show-page-footer="Yes" keep-blank-pages="No" reset-page-count="No" style="">
+      <rml:watermark report="" section="" enabled="No">
+        <rml:parameters>
+        </rml:parameters>
+      </rml:watermark>
+      <rml:section-header keep-with-next="No" table-of-contents="No" force-new-page="None" can-grow="Yes" can-shrink="Yes" height="14240" padding-bottom="20" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No"></rml:control-source>
+        <rml:image name="LogoElixir.gif" left="0" top="0" width="10864" height="2000" background-color="rgb(153,255,153)" style=""><rml:control-source xml:space="preserve" type="URL" running-value="No" url="repository:/ElixirSamples/Report/RML/resource/image/header_r1_c1.gif" url-type="Image"></rml:control-source><rml:script xml:space="preserve"></rml:script>
+        </rml:image>
+        <rml:field auto-wrap="Yes" font-name="Times New Roman" font-color="rgb(153,153,153)" left="7900" top="3300" width="2000" height="400" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Label</rml:control-source>
+        </rml:field>
+        <rml:field auto-wrap="Yes" font-name="Times New Roman" font-color="rgb(153,153,153)" left="5200" top="2000" width="900" height="400" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Image</rml:control-source>
+        </rml:field>
+        <rml:field auto-wrap="Yes" font-name="Tahoma" font-size="320" font-bold="No" font-color="rgb(18,57,116)" left="300" top="2600" width="2800" height="500" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">ID: G0801561A</rml:control-source>
+        </rml:field>
+        <rml:grid line-grid-progression="Box-Count 11 1" glyph-orientation="Auto" box-color="Black" box-border-side="Yes" box-border-top="No" box-border-bottom="Yes" box-border-height="100" char-offset-x="20" char-offset-y="20" font-bold="Yes" keep-together="No" visible="Yes" fill="No" left="2700" top="4300" width="4700" height="500" border-style="Solid" border-radius="20" style=""><rml:control-source xml:space="preserve" type="Field" field="SKU" running-value="No">SKU</rml:control-source>
+        </rml:grid>
+        <rml:field auto-wrap="Yes" font-name="Times New Roman" font-size="300" font-bold="Yes" left="200" top="4400" width="2900" height="500" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Appointment  No. -</rml:control-source>
+        </rml:field>
+        <rml:field auto-wrap="Yes" font-size="300" font-bold="Yes" left="300" top="5400" width="1400" height="500" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Gender-</rml:control-source>
+        </rml:field>
+        <rml:vbox left="1600" top="6000" width="700" height="1400" style="">
+          <rml:cell weight="100" left="1600" top="6000" width="700" height="700" style="">
+            <rml:checkbox horizontal-align="Center" left="1600" top="6000" width="700" height="700" style=""><rml:on-image xml:space="preserve" type="URL" running-value="No" url="resource:images/tick.gif" url-type="Image"></rml:on-image><rml:off-image xml:space="preserve" type="URL" running-value="No" url="resource:images/box.gif" url-type="Image"></rml:off-image><rml:control-source xml:space="preserve" type="Script" running-value="No">=5 &lt; 6</rml:control-source>
+            </rml:checkbox>
+          </rml:cell>
+          <rml:cell weight="100" left="1600" top="6700" width="700" height="700" style="">
+            <rml:checkbox horizontal-align="Center" left="1600" top="6700" width="700" height="700" style=""><rml:on-image xml:space="preserve" type="URL" running-value="No" url="resource:images/tick.gif" url-type="Image"></rml:on-image><rml:off-image xml:space="preserve" type="URL" running-value="No" url="resource:images/box.gif" url-type="Image"></rml:off-image><rml:control-source xml:space="preserve" type="Script" running-value="No">=5&gt;6</rml:control-source>
+            </rml:checkbox>
+          </rml:cell>
+        </rml:vbox>
+        <rml:field auto-wrap="Yes" font-name="Times New Roman" font-size="300" font-bold="No" left="2300" top="6000" width="900" height="500" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Male</rml:control-source>
+        </rml:field>
+        <rml:field auto-wrap="Yes" font-name="Times New Roman" font-size="300" font-bold="No" left="2300" top="6700" width="1400" height="500" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Female</rml:control-source>
+        </rml:field>
+        <rml:field auto-wrap="Yes" font-name="Times New Roman" font-size="260" font-bold="Yes" font-color="rgb(51,51,51)" left="6900" top="2500" width="3300" height="500" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Please scan this barcode</rml:control-source>
+        </rml:field>
+        <rml:field auto-wrap="Yes" font-name="Times New Roman" font-color="rgb(153,153,153)" left="300" top="6000" width="1200" height="400" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">CheckBox</rml:control-source>
+        </rml:field>
+        <rml:field auto-wrap="Yes" font-name="Times New Roman" font-color="rgb(153,153,153)" left="3000" top="4900" width="2000" height="400" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">DataGrid</rml:control-source>
+        </rml:field>
+        <rml:barcode category="Code39-Category" type="ExtendedCode39" image-resolution="72" left="6600" top="2800" width="3800" height="1000" style=""><rml:control-source xml:space="preserve" type="Field" datasource="Barcode" field="SKU-EAN13" running-value="No">Barcode:SKU-EAN13</rml:control-source>
+          <rml:type-barcode-basic height="320" bar-width="40" barcode-angle="0.0" check-digit="Yes" show-text="Yes">
+          </rml:type-barcode-basic>
+        </rml:barcode>
+        <rml:field auto-wrap="Yes" font-name="Tahoma" font-size="240" font-bold="No" left="300" top="3500" width="2800" height="500" style="">
+          <rml:format type="Date/Time" min-integer-digits="1" max-integer-digits="12" min-fraction-digits="2" max-fraction-digits="2" grouping-used="Yes" grouping-size="3" decimal-separator-always-shown="Yes" date-format="Short" time-format="None">
+          </rml:format><rml:control-source xml:space="preserve" type="Script" running-value="No">=var now = new Date();
+//dateFormat(now, "dddd, mmmm dS, yyyy, h:MM:ss TT")
+now.toString('m/dd/yy')
+//now.format("dddd, mmmm dS, yyyy, h TT")
+// Saturday, June 9th, 2007, 5:46:21 PM</rml:control-source>
+        </rml:field>
+        <rml:field auto-wrap="Yes" font-name="Times New Roman" font-size="300" font-bold="Yes" left="300" top="3100" width="3800" height="400" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Appointment Date and Time</rml:control-source>
+        </rml:field>
+        <rml:rect left="4800" top="10900" width="5700" height="2700" border-style="Solid" border-width="20" border-color="rgb(0,0,0)" background-color="rgb(255,255,255)" style="">
+        </rml:rect>
+        <rml:rtf image-resolution="144" left="5100" top="11200" width="5100" height="2200" style=""><rml:control-source xml:space="preserve" type="URL" running-value="No" url="repository:/ElixirSamples/Report/RML/resource/data/sample_rtf.rtf" url-type="Text"></rml:control-source>
+        </rml:rtf>
+        <rml:field auto-wrap="Yes" font-name="Times New Roman" font-color="rgb(153,153,153)" left="5600" top="13800" width="3900" height="300" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Rectangle inside external Rtf file</rml:control-source>
+        </rml:field><rml:callback xml:space="preserve" image-resolution="144" type="HTML" left="100" top="7600" width="10700" height="3200" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">&lt;span style="color:rgb(255,255,255);background-color:rgb(98,166,80);font-size: 16pt;font-weight:bold;font-family:sans-serif;display:block;"&gt;Course Prerequisites&lt;/span&gt;
+&lt;ul style="color:rgb(96,96,96);font-size:12pt;font-family:serif;"&gt;
+&lt;li&gt; Creating directories, files and modifying access rights to the file store&lt;/li&gt;
+&lt;li&gt;Installing a JDK&lt;/li&gt;
+&lt;li&gt;Configuring environment variables, such as JAVA_HOME, for an operating system&lt;/li&gt;
+&lt;li&gt;Launching Java applications and executing an OS-dependent script   that launches a Java application.&lt;/li&gt;
+&lt;li&gt;Creating and expanding a Java archive file (the jar utility)&lt;/li&gt;
+&lt;/ul&gt;</rml:control-source></rml:callback>
+        <rml:field auto-wrap="Yes" font-name="Times New Roman" font-color="rgb(153,153,153)" left="200" top="10200" width="2000" height="400" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">HTML Callback</rml:control-source>
+        </rml:field>
+        <rml:field auto-wrap="Yes" text-align="Center" font-name="Times New Roman" font-size="460" font-bold="Yes" font-color="rgb(255,255,255)" vertical-align="Center" left="4800" top="300" width="5700" height="1300" border-left="No" border-right="No" border-top="No" border-bottom="No" background-color="" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Training Appointment Form</rml:control-source>
+        </rml:field>
+        <rml:ruler>
+        </rml:ruler>
+      </rml:section-header>
+      <rml:section-footer table-of-contents="No" height="0" style="">
+        <rml:ruler>
+        </rml:ruler>
+      </rml:section-footer>
+      <rml:page-header height="0" style="">
+        <rml:ruler>
+        </rml:ruler>
+      </rml:page-header>
+      <rml:page-footer background-color="rgb(255,255,255)" height="640" style="">
+        <rml:field auto-wrap="Yes" font-name="Times New Roman" font-size="260" left="7200" top="0" width="3664" height="400" style=""><rml:control-source xml:space="preserve" type="Script" running-value="No">="Page ${#} of ${##}"</rml:control-source>
+        </rml:field>
+        <rml:ruler>
+        </rml:ruler>
+      </rml:page-footer>
+      <rml:detail table-of-contents="No" height="4500" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No"></rml:control-source>
+        <rml:vbox left="0" top="0" width="10864" height="900" style="">
+          <rml:cell weight="100" left="0" top="0" width="10864" height="450" style="">
+            <rml:field auto-wrap="Yes" font-name="Times New Roman" font-size="260" font-bold="Yes" font-color="rgb(255,255,255)" left="0" top="0" width="10864" height="450" border-style="Solid" border-width="60" border-color="rgb(98,166,80)" border-left="Yes" border-right="Yes" border-top="Yes" border-bottom="Yes" border-radius="60" background-color="rgb(98,166,80)" can-grow="No" can-shrink="No" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Is this your first training appointment?</rml:control-source>
+            </rml:field>
+          </rml:cell>
+          <rml:cell weight="100" left="0" top="450" width="10864" height="450" style="">
+            <rml:hbox left="0" top="450" width="10864" height="450" style="">
+              <rml:cell weight="4234" left="0" top="450" width="2299" height="450" style="">
+                <rml:checkbox vertical-align="Center" left="0" top="450" width="2299" height="450" padding-left="800" style=""><rml:on-image xml:space="preserve" type="URL" running-value="No" url="repository:/ElixirSamples/Report/RML/resource/image/tick.gif" url-type="Image"></rml:on-image><rml:off-image xml:space="preserve" type="URL" running-value="No" url="repository:/ElixirSamples/Report/RML/resource/image/box.gif" url-type="Image"></rml:off-image><rml:control-source xml:space="preserve" type="Script" running-value="No">=5&lt;6</rml:control-source>
+                </rml:checkbox>
+                <rml:field auto-wrap="Yes" font-name="Times New Roman" font-bold="No" vertical-align="Center" left="0" top="450" width="2299" height="450" padding-left="1200" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Yes</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="15766" left="2299" top="450" width="8565" height="450" style="">
+                <rml:checkbox vertical-align="Center" left="2299" top="450" width="8565" height="450" padding-left="0" style=""><rml:on-image xml:space="preserve" type="URL" running-value="No" url="repository:/ElixirSamples/Report/RML/resource/image/tick.gif" url-type="Image"></rml:on-image><rml:off-image xml:space="preserve" type="URL" running-value="No" url="repository:/ElixirSamples/Report/RML/resource/image/box.gif" url-type="Image"></rml:off-image><rml:control-source xml:space="preserve" type="Script" running-value="No">=5&gt;6</rml:control-source>
+                </rml:checkbox>
+                <rml:field auto-wrap="Yes" font-name="Times New Roman" font-bold="No" vertical-align="Center" left="2299" top="450" width="8565" height="450" padding-left="400" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">No</rml:control-source>
+                </rml:field>
+              </rml:cell>
+            </rml:hbox>
+          </rml:cell>
+        </rml:vbox>
+        <rml:vbox left="0" top="3200" width="10864" height="800" style="">
+          <rml:cell weight="100" left="0" top="3200" width="10864" height="400" style="">
+            <rml:field auto-wrap="Yes" font-name="Times New Roman" font-size="260" font-bold="Yes" font-color="rgb(255,255,255)" left="0" top="3200" width="10864" height="400" border-style="Solid" border-width="60" border-color="rgb(98,166,80)" border-radius="60" background-color="rgb(98,166,80)" can-grow="Yes" can-shrink="Yes" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Would you refer our software to someone else?</rml:control-source>
+            </rml:field>
+          </rml:cell>
+          <rml:cell weight="100" left="0" top="3600" width="10864" height="400" style="">
+            <rml:hbox left="0" top="3600" width="10864" height="400" style="">
+              <rml:cell weight="4234" left="0" top="3600" width="2299" height="400" style="">
+                <rml:field auto-wrap="Yes" text-align="Left" font-name="Times New Roman" font-bold="No" vertical-align="Center" left="0" top="3600" width="2299" height="400" padding-left="1200" lock-handles="No" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Yes</rml:control-source>
+                </rml:field>
+                <rml:checkbox horizontal-align="Left" vertical-align="Center" left="0" top="3600" width="2299" height="400" padding-left="800" style=""><rml:on-image xml:space="preserve" type="URL" running-value="No" url="repository:/ElixirSamples/Report/RML/resource/image/tick.gif" url-type="Image"></rml:on-image><rml:off-image xml:space="preserve" type="URL" running-value="No" url="repository:/ElixirSamples/Report/RML/resource/image/box.gif" url-type="Image"></rml:off-image><rml:control-source xml:space="preserve" type="Script" running-value="No">=5&lt;6</rml:control-source>
+                </rml:checkbox>
+              </rml:cell>
+              <rml:cell weight="15766" left="2299" top="3600" width="8565" height="400" style="">
+                <rml:checkbox vertical-align="Center" left="2299" top="3600" width="8565" height="400" style=""><rml:on-image xml:space="preserve" type="URL" running-value="No" url="repository:/ElixirSamples/Report/RML/resource/image/tick.gif" url-type="Image"></rml:on-image><rml:off-image xml:space="preserve" type="URL" running-value="No" url="repository:/ElixirSamples/Report/RML/resource/image/box.gif" url-type="Image"></rml:off-image><rml:control-source xml:space="preserve" type="Script" running-value="No">=5&gt;6</rml:control-source>
+                </rml:checkbox>
+                <rml:field auto-wrap="Yes" text-align="Left" font-name="Times New Roman" font-bold="No" vertical-align="Center" left="2299" top="3600" width="8565" height="400" padding-left="400" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">No</rml:control-source>
+                </rml:field>
+              </rml:cell>
+            </rml:hbox>
+          </rml:cell>
+        </rml:vbox>
+        <rml:vbox left="0" top="1600" width="10864" height="900" style="">
+          <rml:cell weight="100" left="0" top="1600" width="10864" height="450" style="">
+            <rml:field auto-wrap="Yes" font-name="Times New Roman" font-size="260" font-bold="Yes" font-color="rgb(255,255,255)" left="0" top="1600" width="10864" height="450" border-style="Solid" border-width="60" border-color="rgb(98,166,80)" border-radius="60" background-color="rgb(98,166,80)" can-grow="Yes" can-shrink="Yes" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">How often do you use our software?</rml:control-source>
+            </rml:field>
+          </rml:cell>
+          <rml:cell weight="100" left="0" top="2050" width="10864" height="450" style="">
+            <rml:hbox left="0" top="2050" width="10864" height="450" style="">
+              <rml:cell weight="4941" left="0" top="2050" width="2300" height="450" style="">
+                <rml:checkbox vertical-align="Center" left="0" top="2050" width="2300" height="450" padding-left="800" style=""><rml:on-image xml:space="preserve" type="URL" running-value="No" url="repository:/ElixirSamples/Report/RML/resource/image/tick.gif" url-type="Image"></rml:on-image><rml:off-image xml:space="preserve" type="URL" running-value="No" url="repository:/ElixirSamples/Report/RML/resource/image/box.gif" url-type="Image"></rml:off-image><rml:control-source xml:space="preserve" type="Script" running-value="No">=5&lt;6</rml:control-source>
+                </rml:checkbox>
+                <rml:field auto-wrap="Yes" font-name="Times New Roman" font-bold="No" vertical-align="Center" left="0" top="2050" width="2300" height="450" padding-left="1200" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Daily</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="3865" left="2300" top="2050" width="1799" height="450" style="">
+                <rml:checkbox vertical-align="Center" left="2300" top="2050" width="1799" height="450" style=""><rml:on-image xml:space="preserve" type="URL" running-value="No" url="repository:/ElixirSamples/Report/RML/resource/image/tick.gif" url-type="Image"></rml:on-image><rml:off-image xml:space="preserve" type="URL" running-value="No" url="repository:/ElixirSamples/Report/RML/resource/image/box.gif" url-type="Image"></rml:off-image><rml:control-source xml:space="preserve" type="Script" running-value="No">=5&gt;6</rml:control-source>
+                </rml:checkbox>
+                <rml:field auto-wrap="Yes" font-name="Times New Roman" font-bold="No" vertical-align="Center" left="2300" top="2050" width="1799" height="450" padding-left="400" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Weekly</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="14528" left="4099" top="2050" width="6765" height="450" style="">
+                <rml:checkbox horizontal-align="Left" vertical-align="Center" left="4099" top="2050" width="6765" height="450" padding-left="0" style=""><rml:on-image xml:space="preserve" type="URL" running-value="No" url="repository:/ElixirSamples/Report/RML/resource/image/tick.gif" url-type="Image"></rml:on-image><rml:off-image xml:space="preserve" type="URL" running-value="No" url="repository:/ElixirSamples/Report/RML/resource/image/box.gif" url-type="Image"></rml:off-image><rml:control-source xml:space="preserve" type="Script" running-value="No">=5&gt;6</rml:control-source>
+                </rml:checkbox>
+                <rml:field auto-wrap="Yes" font-name="Times New Roman" font-bold="No" vertical-align="Center" left="4099" top="2050" width="6765" height="450" padding-left="400" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Monthly</rml:control-source>
+                </rml:field>
+              </rml:cell>
+            </rml:hbox>
+          </rml:cell>
+        </rml:vbox>
+        <rml:field auto-wrap="Yes" font-color="rgb(153,153,153)" left="8700" top="4100" width="2000" height="400" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Hbox Vbox</rml:control-source>
+        </rml:field>
+        <rml:ruler>
+        </rml:ruler>
+      </rml:detail>
+      <rml:ruler>
+      </rml:ruler>
+    </rml:section>
+  </rml:sections>
+  <rml:sequence>
+    <rml:section-invocation report="" section="Section 1" enabled="Yes">
+      <rml:parameters>
+      </rml:parameters>
+    </rml:section-invocation>
+  </rml:sequence>
+  <rml:rendering>
+    <rml:render-details mime-type="application/pdf">
+      <rml:parameters><rml:param xml:space="preserve" key="RenderAsImage">No</rml:param><rml:param xml:space="preserve" key="AllowScreenReaders">No</rml:param><rml:param xml:space="preserve" key="EncryptionStrength">128 bits</rml:param><rml:param xml:space="preserve" key="AllowDegradedPrinting">No</rml:param><rml:param xml:space="preserve" key="AllowCopy">No</rml:param><rml:param xml:space="preserve" key="UserPassword"></rml:param><rml:param xml:space="preserve" key="RenderTextAPI">Yes</rml:param><rml:param xml:space="preserve" key="Encryption">No</rml:param><rml:param xml:space="preserve" key="BlankPageOnEmptyFile">No</rml:param><rml:param xml:space="preserve" key="AllowModifyContents">No</rml:param><rml:param xml:space="preserve" key="OwnerPassword"></rml:param><rml:param xml:space="preserve" key="AllowFillIn">No</rml:param><rml:param xml:space="preserve" key="AllowPrinting">No</rml:param><rml:param xml:space="preserve" key="CJKMappingURL"></rml:param><rml:param xml:space="preserve" key="AllowModifyAnnotations">No</rml:param><rml:param xml:space="preserve" key="Greyscale">No</rml:param><rml:param xml:space="preserve" key="AllowAssembly">No</rml:param><rml:param xml:space="preserve" key="RenderAsImageDPI"></rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/x-print">
+      <rml:parameters>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="text/xml">
+      <rml:parameters><rml:param xml:space="preserve" key="Paged">No</rml:param><rml:param xml:space="preserve" key="Indented">No</rml:param><rml:param xml:space="preserve" key="XSLTEnabled">No</rml:param><rml:param xml:space="preserve" key="Encoding">UTF-8</rml:param><rml:param xml:space="preserve" key="XSLT"></rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/x-glint">
+      <rml:parameters><rml:param xml:space="preserve" key="Tree">No</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/postscript">
+      <rml:parameters>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+      <rml:parameters>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/vnd.hp-pcl">
+      <rml:parameters><rml:param xml:space="preserve" key="OffsetX">0</rml:param><rml:param xml:space="preserve" key="OffsetY">0</rml:param><rml:param xml:space="preserve" key="Sides">OneSided</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/x-html-zip">
+      <rml:parameters><rml:param xml:space="preserve" key="SVGPassThrough">No</rml:param><rml:param xml:space="preserve" key="Paged">Yes</rml:param><rml:param xml:space="preserve" key="Streamed">No</rml:param><rml:param xml:space="preserve" key="TreeNormalColor"></rml:param><rml:param xml:space="preserve" key="TreeHighlightColor"></rml:param><rml:param xml:space="preserve" key="Tree">No</rml:param><rml:param xml:space="preserve" key="Sectioned">No</rml:param><rml:param xml:space="preserve" key="SkipHeaders">No</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="text/x-lpt">
+      <rml:parameters><rml:param xml:space="preserve" key="CharacterHeight">300</rml:param><rml:param xml:space="preserve" key="CharacterWidth">150</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/rtf">
+      <rml:parameters><rml:param xml:space="preserve" key="Word2003">No</rml:param><rml:param xml:space="preserve" key="Company"></rml:param><rml:param xml:space="preserve" key="Comments"></rml:param><rml:param xml:space="preserve" key="Author"></rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/vnd.openxmlformats-officedocument.presentationml.presentation">
+      <rml:parameters>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="text/csv">
+      <rml:parameters><rml:param xml:space="preserve" key="Encoding">UTF-8</rml:param><rml:param xml:space="preserve" key="Qualifier">None</rml:param><rml:param xml:space="preserve" key="Separator">Comma</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/vnd.ms-excel">
+      <rml:parameters><rml:param xml:space="preserve" key="ForceNumbersAsText">No</rml:param><rml:param xml:space="preserve" key="Paged">Yes</rml:param><rml:param xml:space="preserve" key="Streamed">No</rml:param><rml:param xml:space="preserve" key="Multiplier"></rml:param><rml:param xml:space="preserve" key="Tree">No</rml:param><rml:param xml:space="preserve" key="Sectioned">No</rml:param><rml:param xml:space="preserve" key="Snap">No</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+  </rml:rendering></rml:report>
+
