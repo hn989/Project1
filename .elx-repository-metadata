@@ -1,0 +1,30 @@
+[
+  {
+    "path" : "/Project1",
+    "tags" : [
+      "ReportPortal-roleA"
+    ],
+    "acl" : [
+      {
+        "by" : "role-67b49914ad53635606076330",
+        "write" : true
+      }
+    ]
+  },
+  {
+    "path" : "/Project1/Form.rml",
+    "tags" : [
+    ],
+    "acl" : [
+    ],
+    "lastModified" : 1739888861956
+  },
+  {
+    "path" : "/Project1/Map.rml",
+    "tags" : [
+    ],
+    "acl" : [
+    ],
+    "lastModified" : 1739888861793
+  }
+]
