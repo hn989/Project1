@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="225">
+  <defs>
+    <filter id="myFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="520" height="225">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
+      <feOffset in="blur" dx="4" dy="4" result="offsetBlur"/>
+      <feSpecularLighting in="blur" surfaceScale="5" specularConstant="0.75" specularExponent="20" lighting-color="#bbbbbb" result="specOut">
+        <fePointLight x="-5000" y="-10000" z="20000"/>
+      </feSpecularLighting>
+      <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut"/>
+      <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint"/>
+      <feMerge>
+        <feMergeNode in="offsetBlur"/>
+        <feMergeNode in="litPaint"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#myFilter)">
+    <path d="M 25 5  L 480 5   Q 500 5 500 25 L 500 180 Q 500 200 480 200 L 300 200 Q 280 200 280 180 L 280 100  Q 280 80 260 80 L 20 80  Q 5 80 5 60 L 5 25  Q 5 5 25 5    Z" fill="#FF8800" stroke="#FF8800" stroke-width="0"/>
+    <path d="M 25 5 L 480 5   Q 500 5 500 25 L 500 180 Q 500 200 480 200 L 25 200 Q 5 200 5 180 L 5 25 Q 5 5 25 5 Z" fill="none" stroke="#FF8800" stroke-width="5"/>
+    <g fill="#3300FF" stroke="black" font-size="25">
+      <text x="25" y="35"></text>
+    </g>
+  </g>
+</svg>

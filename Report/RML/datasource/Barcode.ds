@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ds:datasource xmlns:ds="http://www.elixirtech.com/DataSource" name="Barcode" type="Data" path="/ElixirSamples/Report/RML/datasource/Barcode.ds" description="Tabular Datasource for Barcode Code">
+  <ds:schema case-sensitive="Yes">
+    <ds:column name="ProductName" type="String" />
+    <ds:column name="SKU" type="String" />
+    <ds:column name="SKU-EAN13" type="String" />
+    <ds:column name="SKU-EAN8" type="String" />
+  </ds:schema>
+  <ds:security name="" />
+  <ds:data>
+    <ds:record>
+      <ds:field>Washington Berry Juice</ds:field>
+      <ds:field>90748583674</ds:field>
+      <ds:field>4711234567899</ds:field>
+      <ds:field>01006414</ds:field>
+    </ds:record>
+  </ds:data>
+</ds:datasource>
+

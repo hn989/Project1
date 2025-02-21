@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ds:datasource xmlns:ds="http://www.elixirtech.com/DataSource" name="Company Analysis (Small)" type="Data" path="/Demo/Report/RML/Chart/datasource/Company Analysis (Small).ds" description="">
+  <ds:schema case-sensitive="Yes">
+    <ds:column name="X" type="Double" />
+    <ds:column name="Y" type="Double" />
+    <ds:column name="Taxes" type="Double" />
+  </ds:schema>
+  <ds:security name="" />
+  <ds:data>
+    <ds:record>
+      <ds:field>0.0</ds:field>
+      <ds:field>10.0</ds:field>
+      <ds:field>25.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>2.0</ds:field>
+      <ds:field>33.0</ds:field>
+      <ds:field>13.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>3.0</ds:field>
+      <ds:field>16.0</ds:field>
+      <ds:field>16.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>4.0</ds:field>
+      <ds:field>31.0</ds:field>
+      <ds:field>3.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>5.0</ds:field>
+      <ds:field>23.0</ds:field>
+      <ds:field>33.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>6.0</ds:field>
+      <ds:field>32.0</ds:field>
+      <ds:field>78.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>7.0</ds:field>
+      <ds:field>8.0</ds:field>
+      <ds:field>22.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>8.0</ds:field>
+      <ds:field>9.0</ds:field>
+      <ds:field>34.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>9.0</ds:field>
+      <ds:field>22.0</ds:field>
+      <ds:field>53.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>10.0</ds:field>
+      <ds:field>5.0</ds:field>
+      <ds:field>4.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>12.0</ds:field>
+      <ds:field>83.0</ds:field>
+      <ds:field>55.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>17.0</ds:field>
+      <ds:field>4.0</ds:field>
+      <ds:field>13.0</ds:field>
+    </ds:record>
+  </ds:data>
+</ds:datasource>
+

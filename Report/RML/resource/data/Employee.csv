@@ -1,0 +1,118 @@
+employee_id,full_name,department_id,hire_date,salary,education_level,gender
+1,Sheri Nowmer,1,1994-12-01 00:00:00,80000,Graduate Degree,F
+2,Derrick Whelply,2,1994-12-02 00:00:00,40000,Graduate Degree,M
+4,Michael Spence,3,1994-12-03 00:00:00,40000,Graduate Degree,M
+5,Maya Gutierrez,4,1994-12-04 00:00:00,35000,Bachelors Degree,F
+6,Roberta Damstra,5,1994-12-05 00:00:00,25000,Bachelors Degree,F
+7,Rebecca Kanagaki,6,1994-12-06 00:00:00,15000,Bachelors Degree,F
+8,Kim Brunner,7,1994-12-07 00:00:00,10000,Bachelors Degree,F
+9,Brenda Blumberg,8,1994-12-08 00:00:00,17000,Graduate Degree,F
+10,Darren Stanz,9,1994-12-09 00:00:00,50000,Partial College,M
+11,Jonathan Murraiin,2,1994-12-10 00:00:00,15000,Graduate Degree,M
+12,Jewel Creek,10,1994-12-11 00:00:00,8500,Graduate Degree,F
+13,Peggy Medina,2,1994-12-12 00:00:00,15000,Bachelors Degree,F
+14,Bryan Rutledge,3,1994-12-13 00:00:00,17000,Bachelors Degree,M
+15,Walter Cavestany,4,1994-12-14 00:00:00,12000,Bachelors Degree,M
+16,Peggy Planck,6,1994-12-15 00:00:00,17000,Bachelors Degree,F
+17,Brenda Marshall,6,1994-12-16 00:00:00,10000,Partial College,F
+18,Daniel Wolter,9,1994-12-17 00:00:00,17000,Partial College,M
+19,Dianne Collins,8,1994-12-18 00:00:00,10000,Bachelors Degree,F
+20,Beverly Baker,9,1994-12-19 00:00:00,30000,Bachelors Degree,F
+21,Pedro Castillo,1,1994-12-20 00:00:00,35000,Bachelors Degree,M
+22,Laurie Borges,6,1994-12-21 00:00:00,35000,Bachelors Degree,F
+23,Shauna Wyro,2,1994-12-22 00:00:00,15000,Bachelors Degree,F
+24,Jacqueline Wyllie,4,1994-12-23 00:00:00,17000,Partial College,F
+25,Lin Conley,1,1994-12-24 00:00:00,12000,Graduate Degree,F
+26,Jose Bernard,6,1994-12-25 00:00:00,15000,High School Degree,M
+27,Charles Macaluso,6,1994-12-26 00:00:00,16000,Bachelors Degree,M
+28,Lois Wood,7,1994-12-27 00:00:00,14000,Partial College,F
+29,Kevin Armstrong,5,1994-12-28 00:00:00,8500,Graduate Degree,M
+30,Cody Goldey,9,1994-12-29 00:00:00,15000,Partial College,M
+31,Paula Nickell,8,1994-12-30 00:00:00,14000,Partial College,F
+32,Eric Long,5,1994-12-31 00:00:00,17000,High School Degree,M
+33,Mary Solimena,2,1995-01-01 00:00:00,17000,Bachelors Degree,F
+34,Nathan Muenich,3,1995-01-02 00:00:00,7000,Graduate Degree,M
+35,Ed Young,4,1995-01-03 00:00:00,11000,Bachelors Degree,M
+36,Donna Arnold,5,1995-01-04 00:00:00,45000,Bachelors Degree,F
+37,Jennifer Cooper,6,1995-01-05 00:00:00,6700,Bachelors Degree,F
+38,Peggy Petty,7,1995-01-06 00:00:00,8000,High School Degree,F
+39,Jessica Olguin,10,1995-01-07 00:00:00,10000,Bachelors Degree,F
+40,Phyllis Burchett,9,1995-01-08 00:00:00,10000,High School Degree,F
+41,Howard Bechard,10,1995-01-09 00:00:00,8500,High School Degree,M
+42,Doris Carter,6,1995-01-10 00:00:00,5000,High School Degree,F
+43,Juanita Sharp,2,1995-01-11 00:00:00,6700,Partial College,F
+44,Sandra Brunner,3,1995-01-12 00:00:00,5000,Bachelors Degree,F
+45,Ernest Staton,4,1995-01-13 00:00:00,6800,Graduate Degree,M
+46,Rose Sims,6,1995-01-14 00:00:00,6600,High School Degree,F
+47,Lauretta De Carlo,6,1995-01-15 00:00:00,6500,High School Degree,F
+48,Mary Williams,7,1995-01-16 00:00:00,7200,Partial College,F
+49,Terri Burke,8,1995-01-17 00:00:00,5000,Graduate Degree,F
+50,Audrey Osborn,9,1995-01-18 00:00:00,5000,Bachelors Degree,F
+51,Brian Binai,6,1995-01-19 00:00:00,5000,High School Degree,M
+52,Concepcion Lozada,1,1995-01-20 00:00:00,5000,Partial College,F
+53,Paul Tays,2,1995-01-21 00:00:00,12000,High School Degree,M
+54,Cheryl Thorton,3,1995-01-22 00:00:00,9000,Partial College,F
+55,Gary Dumin,4,1995-01-23 00:00:00,8000,Partial High School,M
+56,Pat Chin,5,1995-01-24 00:00:00,7000,High School Degree,F
+57,Mary Hunt,5,1995-01-25 00:00:00,13000,Graduate Degree,F
+58,Libby Allen,7,1995-01-26 00:00:00,12000,Partial High School,F
+59,Bonnie Bruno,8,1995-01-27 00:00:00,15000,Partial College,F
+60,Angela Bowers,9,1995-01-28 00:00:00,16000,Partial High School,F
+61,Dell Gras,1,1995-01-29 00:00:00,14000,Bachelors Degree,F
+62,Christopher Solano,1,1995-01-30 00:00:00,8500,Partial High School,M
+63,George Armstrong,2,1995-01-31 00:00:00,15000,Bachelors Degree,M
+64,Kristine Aldred,3,1995-02-01 00:00:00,14000,Partial College,F
+65,Bunny McCown,2,1995-02-02 00:00:00,17000,Bachelors Degree,F
+66,Barbara Wallin,5,1995-02-03 00:00:00,17000,Bachelors Degree,M
+67,Michael Bruha,6,1995-02-04 00:00:00,7000,Bachelors Degree,F
+68,Michael Suggs,8,1995-02-05 00:00:00,11000,Partial College,F
+69,Kenneth Turner,8,1995-02-06 00:00:00,45000,Graduate Degree,F
+70,Adam Reynolds,9,1995-02-07 00:00:00,6700,Bachelors Degree,F
+71,Constance Posner,2,1995-02-08 00:00:00,8000,Bachelors Degree,F
+72,William Hapke,1,1995-02-09 00:00:00,10000,Partial College,M
+73,Joshua Huff,2,1995-02-10 00:00:00,10000,Bachelors Degree,F
+74,Matthew Hunter,3,1995-02-11 00:00:00,8500,Graduate Degree,F
+75,Florence Vonholt,4,1995-02-12 00:00:00,5000,Partial High School,M
+76,Eddie Holmes,5,1995-02-13 00:00:00,6700,Graduate Degree,M
+77,Gerald Drury,6,1995-02-14 00:00:00,5000,Partial College,M
+78,Carlton Carlisle,7,1995-02-15 00:00:00,6800,Partial College,F
+79,Abe Tramel,8,1995-02-16 00:00:00,6600,High School Degree,M
+80,Jose Curry,9,1995-02-17 00:00:00,6500,Bachelors Degree,F
+81,Betty Haines,1,1995-02-18 00:00:00,7200,Graduate Degree,M
+82,Deborah Campbell,1,1995-02-19 00:00:00,5000,Bachelors Degree,M
+83,Catherine Whitney,2,1995-02-20 00:00:00,5000,Partial High School,F
+84,Neva Mitchell,3,1995-02-21 00:00:00,5000,Bachelors Degree,F
+85,Cindy Dodd,4,1995-02-22 00:00:00,5000,Bachelors Degree,F
+86,Stacey Cereghino,5,1995-02-23 00:00:00,12000,Graduate Degree,M
+87,Helen Meyer,6,1995-02-24 00:00:00,9000,Partial College,M
+88,Olga Stevens,7,1995-02-25 00:00:00,8000,Bachelors Degree,F
+89,Joan Campbell,8,1995-02-26 00:00:00,7000,Bachelors Degree,M
+90,Silvia Walker,9,1995-02-27 00:00:00,13000,Bachelors Degree,M
+91,Mosha Pasumansky,10,1995-02-28 00:00:00,12000,Graduate Degree,M
+92,Shawn Whitney,1,1995-03-01 00:00:00,15000,Graduate Degree,M
+93,Lloyd Saunders,2,1995-03-02 00:00:00,16000,Bachelors Degree,M
+94,Rose Vandenouer,3,1995-03-03 00:00:00,14000,High School Degree,F
+95,Eric Vincenzi,6,1995-03-04 00:00:00,8500,Graduate Degree,F
+96,Cheryl Herring,5,1995-03-05 00:00:00,15000,Partial College,M
+97,Kathleen Garza,6,1995-03-06 00:00:00,14000,Partial College,M
+98,Gail Westover,7,1995-03-07 00:00:00,17000,Partial College,F
+99,Matthew Hagemann,8,1995-03-08 00:00:00,17000,Partial College,F
+100,Patricia Vasquez,9,1995-03-09 00:00:00,7000,Bachelors Degree,M
+101,Lola McCarthy,10,1995-03-10 00:00:00,11000,Bachelors Degree,F
+102,Phillip Bacalzo,1,1995-03-11 00:00:00,45000,Partial College,M
+103,Marian Berch,2,1995-03-12 00:00:00,6700,Partial High School,F
+104,Mike Taylor,3,1995-03-13 00:00:00,8000,Graduate Degree,M
+105,Vivian Whipple,4,1995-03-14 00:00:00,10000,Bachelors Degree,M
+106,Cecilia Laursen,9,1995-03-15 00:00:00,10000,Bachelors Degree,M
+107,Lee Olguin,6,1995-03-16 00:00:00,8500,Bachelors Degree,M
+108,Stephen Ayers,7,1995-03-17 00:00:00,5000,High School Degree,F
+109,Pamala Kotc,8,1995-03-18 00:00:00,6700,Partial High School,F
+110,Marlin Coriell,9,1995-03-19 00:00:00,5000,Partial College,M
+111,Clay Warthen,10,1995-03-20 00:00:00,6800,Partial College,F
+112,Greg Johnson,1,1995-03-21 00:00:00,6600,Partial High School,M
+113,George Huckaby,2,1995-03-22 00:00:00,6500,Bachelors Degree,F
+114,Faith Gustafson,9,1995-03-23 00:00:00,7200,Graduate Degree,F
+115,Donald Thompson,4,1995-03-24 00:00:00,5000,Bachelors Degree,F
+116,Valentina Hendricks,5,1995-03-25 00:00:00,5000,Partial College,F
+117,Mae Black,6,1995-03-26 00:00:00,5000,High School Degree,F
+118,Carlos Vansant,7,1995-03-27 00:00:00,5000,Partial College,M

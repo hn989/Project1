@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ds:datasource xmlns:ds="http://www.elixirtech.com/DataSource" name="cCustomer Details - Pre-Sorted" type="Composite" path="/ElixirSamples/Report/DocX/datasource/cCustomer Details - Pre-Sorted.ds" description="" version="2">
+  <ds:parameter-cache>
+    <ds:parameter name="city" type="" default-value="" />
+  </ds:parameter-cache>
+  <ds:schema case-sensitive="Yes">
+    <ds:column name="customer_id" type="Long" />
+    <ds:column name="address1" type="String" />
+    <ds:column name="city" type="String" />
+    <ds:column name="birthdate" type="Timestamp" />
+    <ds:column name="country" type="String" />
+    <ds:column name="gender" type="String" />
+    <ds:column name="education" type="String" />
+  </ds:schema>
+  <ds:security name="" />
+  <ds:composite />
+  <graph version="1.0">
+    <node id="0" class="com.elixirtech.ensemble.canvas.CompositeDiagram">
+      <property name="name" xml:space="preserve">Ensemble</property>
+      <property name="policy" xml:space="preserve">com.elixirtech.ensemble.canvas.EnsemblePolicy</property>
+    </node>
+    <node id="1" class="com.elixirtech.ensemble.canvas.ResultGO">
+      <property name="text" xml:space="preserve">Result</property>
+      <property name="fill" xml:space="preserve">Wheat</property>
+      <property name="rect" xml:space="preserve">(355,160,435,200)</property>
+      <property name="minheight" xml:space="preserve">40</property>
+      <property name="minwidth" xml:space="preserve">60</property>
+    </node>
+    <node id="2" class="com.elixirtech.ensemble.canvas.DataSourceGO">
+      <property name="text" xml:space="preserve">Customer Details - Pre-Sorted</property>
+      <property name="fill" xml:space="preserve">Wheat</property>
+      <property name="rect" xml:space="preserve">(34,41,114,81)</property>
+      <property name="minheight" xml:space="preserve">40</property>
+      <property name="minwidth" xml:space="preserve">60</property>
+      <user-property name="DataSource" xml:space="preserve">/ElixirSamples/Report/DocX/datasource/Customer Details - Pre-Sorted.ds</user-property>
+      <user-property name="DataSource_Discard" xml:space="preserve"></user-property>
+    </node>
+    <node id="3" class="com.elixirtech.ensemble.canvas.FilterGO">
+      <property name="text" xml:space="preserve">Filter</property>
+      <property name="fill" xml:space="preserve">Wheat</property>
+      <property name="rect" xml:space="preserve">(170,90,250,130)</property>
+      <property name="minheight" xml:space="preserve">40</property>
+      <property name="minwidth" xml:space="preserve">60</property>
+      <user-property name="Filter_JavaScript" xml:space="preserve"></user-property>
+    </node>
+    <node id="4" class="com.elixirtech.ensemble.canvas.FilterNode">
+      <property name="Name" xml:space="preserve">city</property>
+      <property name="Value" xml:space="preserve">${city}</property>
+      <property name="When" xml:space="preserve">Matches</property>
+      <property name="SetId" xml:space="preserve">0</property>
+    </node>
+    <node id="5" class="com.elixirtech.ensemble.canvas.DataFlowGO">
+      <property name="points" xml:space="preserve">(142,61)(142,110)</property>
+    </node>
+    <node id="6" class="com.elixirtech.ensemble.canvas.DataFlowGO">
+      <property name="points" xml:space="preserve">(278,110)(295,180)</property>
+    </node>
+    <relationship type="Owns" from="0" to="1" />
+    <relationship type="Owns" from="0" to="2" />
+    <relationship type="Owns" from="0" to="3" />
+    <relationship type="Owns" from="0" to="5" />
+    <relationship type="Owns" from="0" to="6" />
+    <relationship type="Repaints" from="1" to="6">
+      <user-property name="stop" xml:space="preserve">true</user-property>
+    </relationship>
+    <relationship type="Repaints" from="2" to="5">
+      <user-property name="start" xml:space="preserve">true</user-property>
+    </relationship>
+    <relationship type="Repaints" from="3" to="5">
+      <user-property name="stop" xml:space="preserve">true</user-property>
+    </relationship>
+    <relationship type="Repaints" from="3" to="6">
+      <user-property name="start" xml:space="preserve">true</user-property>
+    </relationship>
+    <relationship type="Owns" from="3" to="4" />
+  </graph>
+</ds:datasource>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ds:datasource xmlns:ds="http://www.elixirtech.com/DataSource" name="compositedata" type="Data" description="">
+  <ds:schema case-sensitive="Yes">
+    <ds:column name="Company" type="String" />
+    <ds:column name="1997" type="Double" />
+    <ds:column name="1998" type="Double" />
+    <ds:column name="1999" type="Double" />
+    <ds:column name="2000" type="Double" />
+  </ds:schema>
+  <ds:security name="" />
+  <ds:data>
+    <ds:record>
+      <ds:field>A</ds:field>
+      <ds:field>100.0</ds:field>
+      <ds:field>220.0</ds:field>
+      <ds:field>150.0</ds:field>
+      <ds:field>180.0</ds:field>
+    </ds:record>
+  </ds:data>
+</ds:datasource>
+

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ds:datasource xmlns:ds="http://www.elixirtech.com/DataSource" name="HighLowData" type="Data" path="/ElixirSamples/Report/RML/Chart/datasource/HighLowData.ds" description="">
+  <ds:schema case-sensitive="Yes">
+    <ds:column name="Date" type="Date" />
+    <ds:column name="High" type="Long" />
+    <ds:column name="Low" type="Long" />
+    <ds:column name="Open" type="Long" />
+    <ds:column name="Close" type="Long" />
+    <ds:column name="Volume" type="Long" />
+  </ds:schema>
+  <ds:security name="" />
+  <ds:data>
+    <ds:record>
+      <ds:field>2004-05-01</ds:field>
+      <ds:field>34560</ds:field>
+      <ds:field>20000</ds:field>
+      <ds:field>30000</ds:field>
+      <ds:field>23499</ds:field>
+      <ds:field>100000</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>2004-05-02</ds:field>
+      <ds:field>29999</ds:field>
+      <ds:field>15000</ds:field>
+      <ds:field>23499</ds:field>
+      <ds:field>19000</ds:field>
+      <ds:field>99000</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>2004-05-03</ds:field>
+      <ds:field>89299</ds:field>
+      <ds:field>50000</ds:field>
+      <ds:field>19000</ds:field>
+      <ds:field>60000</ds:field>
+      <ds:field>180000</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>2004-05-04</ds:field>
+      <ds:field>70000</ds:field>
+      <ds:field>60000</ds:field>
+      <ds:field>61000</ds:field>
+      <ds:field>65000</ds:field>
+      <ds:field>160000</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>2004-05-05</ds:field>
+      <ds:field>80000</ds:field>
+      <ds:field>60000</ds:field>
+      <ds:field>65000</ds:field>
+      <ds:field>40000</ds:field>
+      <ds:field>170000</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>2004-05-06</ds:field>
+      <ds:field>50000</ds:field>
+      <ds:field>40000</ds:field>
+      <ds:field>40000</ds:field>
+      <ds:field>46000</ds:field>
+      <ds:field>183000</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>2004-05-07</ds:field>
+      <ds:field>60000</ds:field>
+      <ds:field>45000</ds:field>
+      <ds:field>46000</ds:field>
+      <ds:field>55000</ds:field>
+      <ds:field>190000</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>2004-05-08</ds:field>
+      <ds:field>61200</ds:field>
+      <ds:field>40000</ds:field>
+      <ds:field>55000</ds:field>
+      <ds:field>50000</ds:field>
+      <ds:field>200100</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>2004-05-09</ds:field>
+      <ds:field>89000</ds:field>
+      <ds:field>45000</ds:field>
+      <ds:field>50000</ds:field>
+      <ds:field>65000</ds:field>
+      <ds:field>200000</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>2004-05-10</ds:field>
+      <ds:field>70000</ds:field>
+      <ds:field>41000</ds:field>
+      <ds:field>65000</ds:field>
+      <ds:field>50000</ds:field>
+      <ds:field>340000</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>2004-05-11</ds:field>
+      <ds:field>80000</ds:field>
+      <ds:field>50000</ds:field>
+      <ds:field>50000</ds:field>
+      <ds:field>65000</ds:field>
+      <ds:field>290000</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>2004-05-12</ds:field>
+      <ds:field>89000</ds:field>
+      <ds:field>60000</ds:field>
+      <ds:field>65000</ds:field>
+      <ds:field>65000</ds:field>
+      <ds:field>320000</ds:field>
+    </ds:record>
+  </ds:data>
+</ds:datasource>
+

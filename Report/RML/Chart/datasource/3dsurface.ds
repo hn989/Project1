@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ds:datasource xmlns:ds="http://www.elixirtech.com/DataSource" name="3dsurface" type="Text" path="/ElixirSamples/Report/RML/Chart/datasource/3dsurface.ds" description="">
+  <ds:parameter-cache />
+  <ds:schema case-sensitive="Yes">
+    <ds:column name="﻿z" type="Double" />
+    <ds:column name="x" type="Double" />
+    <ds:column name="y" type="Double" />
+  </ds:schema>
+  <ds:security name="" />
+  <ds:text encoding="UTF-8" skip-first-row="Yes" skip-lines="0" url="repository:/ElixirSamples/Report/RML/Chart/resource/data/3dsurface.csv">
+    <ds:delimited delimiter="," qualifier="none" />
+  </ds:text>
+</ds:datasource>
+

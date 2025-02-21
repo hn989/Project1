@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ds:datasource xmlns:ds="http://www.elixirtech.com/DataSource" name="CustomerOrders" type="Data" path="/ElixirSamples/Report/RML/Sub Report/datasource/CustomerOrders.ds" description="">
+  <ds:schema case-sensitive="Yes">
+    <ds:column name="ID" type="Long" />
+    <ds:column name="CUSTOMERID" type="Long" />
+    <ds:column name="COMPANY" type="String" />
+    <ds:column name="DATE" type="Date" />
+  </ds:schema>
+  <ds:security name="" />
+  <ds:data>
+    <ds:record>
+      <ds:field>1001</ds:field>
+      <ds:field>101</ds:field>
+      <ds:field>Fairway Fruit Mart</ds:field>
+      <ds:field>2005-01-01</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1002</ds:field>
+      <ds:field>102</ds:field>
+      <ds:field>F&amp;F Fresh Mart</ds:field>
+      <ds:field>2005-03-01</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1003</ds:field>
+      <ds:field>103</ds:field>
+      <ds:field>Caribbean House Food Mart</ds:field>
+      <ds:field>2005-02-01</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1004</ds:field>
+      <ds:field>103</ds:field>
+      <ds:field>Caribbean House Food Mart</ds:field>
+      <ds:field>2005-04-01</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1005</ds:field>
+      <ds:field>103</ds:field>
+      <ds:field>Caribbean House Food Mart</ds:field>
+      <ds:field>2005-05-03</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1006</ds:field>
+      <ds:field>104</ds:field>
+      <ds:field>Golden Temple Natural Grocery</ds:field>
+      <ds:field>2005-06-04</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1007</ds:field>
+      <ds:field>104</ds:field>
+      <ds:field>Golden Temple Natural Grocery</ds:field>
+      <ds:field>2005-06-04</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1008</ds:field>
+      <ds:field>104</ds:field>
+      <ds:field>Golden Temple Natural Grocery</ds:field>
+      <ds:field>2005-07-01</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1009</ds:field>
+      <ds:field>104</ds:field>
+      <ds:field>Golden Temple Natural Grocery</ds:field>
+      <ds:field>2005-06-04</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1010</ds:field>
+      <ds:field>104</ds:field>
+      <ds:field>Golden Temple Natural Grocery</ds:field>
+      <ds:field>2005-05-03</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1012</ds:field>
+      <ds:field>105</ds:field>
+      <ds:field>The Fresh Food Garden</ds:field>
+      <ds:field>2005-08-01</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1013</ds:field>
+      <ds:field>105</ds:field>
+      <ds:field>The Fresh Food Garden</ds:field>
+      <ds:field>2005-08-01</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1015</ds:field>
+      <ds:field>105</ds:field>
+      <ds:field>The Fresh Food Garden</ds:field>
+      <ds:field>2005-09-01</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1016</ds:field>
+      <ds:field>105</ds:field>
+      <ds:field>The Fresh Food Garden</ds:field>
+      <ds:field>2005-10-01</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1017</ds:field>
+      <ds:field>106</ds:field>
+      <ds:field>Everlasting Life Grocery</ds:field>
+      <ds:field>2005-10-01</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1018</ds:field>
+      <ds:field>106</ds:field>
+      <ds:field>Everlasting Life Grocery</ds:field>
+      <ds:field>2005-10-01</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1019</ds:field>
+      <ds:field>106</ds:field>
+      <ds:field>Everlasting Life Grocery</ds:field>
+      <ds:field>2005-08-01</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1027</ds:field>
+      <ds:field>109</ds:field>
+      <ds:field>Seva Restaurant &amp; Market</ds:field>
+      <ds:field>2005-06-04</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1028</ds:field>
+      <ds:field>109</ds:field>
+      <ds:field>Seva Restaurant &amp; Market</ds:field>
+      <ds:field>2005-06-04</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1029</ds:field>
+      <ds:field>109</ds:field>
+      <ds:field>Seva Restaurant &amp; Market</ds:field>
+      <ds:field>2005-07-01</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>1030</ds:field>
+      <ds:field>109</ds:field>
+      <ds:field>Seva Restaurant &amp; Market</ds:field>
+      <ds:field>2005-11-01</ds:field>
+    </ds:record>
+  </ds:data>
+</ds:datasource>
+

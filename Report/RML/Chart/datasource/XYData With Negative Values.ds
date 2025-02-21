@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ds:datasource xmlns:ds="http://www.elixirtech.com/DataSource" name="XYData With Negative Values" type="Data" path="/ElixirSamples/Report/RML/Chart/datasource/XYData With Negative Values.ds" description="">
+  <ds:schema case-sensitive="Yes">
+    <ds:column name="Fruit" type="String" />
+    <ds:column name="X" type="Double" />
+    <ds:column name="Y1" type="Double" />
+    <ds:column name="Y2" type="Double" />
+    <ds:column name="Y3" type="Double" />
+  </ds:schema>
+  <ds:security name="" />
+  <ds:data>
+    <ds:record>
+      <ds:field>Apple</ds:field>
+      <ds:field>0.0</ds:field>
+      <ds:field>25.0</ds:field>
+      <ds:field>12.0</ds:field>
+      <ds:field>9.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>Strawberry</ds:field>
+      <ds:field>2.0</ds:field>
+      <ds:field>13.0</ds:field>
+      <ds:field>23.0</ds:field>
+      <ds:field>9.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>Berry</ds:field>
+      <ds:field>3.0</ds:field>
+      <ds:field>16.0</ds:field>
+      <ds:field>27.0</ds:field>
+      <ds:field>23.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>Orange</ds:field>
+      <ds:field>4.0</ds:field>
+      <ds:field>3.0</ds:field>
+      <ds:field>89.0</ds:field>
+      <ds:field>23.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>Orange</ds:field>
+      <ds:field>5.0</ds:field>
+      <ds:field>33.0</ds:field>
+      <ds:field>80.0</ds:field>
+      <ds:field>23.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>Berry</ds:field>
+      <ds:field>6.0</ds:field>
+      <ds:field>78.0</ds:field>
+      <ds:field>23.0</ds:field>
+      <ds:field>-15.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>Mango</ds:field>
+      <ds:field>7.0</ds:field>
+      <ds:field>22.0</ds:field>
+      <ds:field>23.0</ds:field>
+      <ds:field>3.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>Apple</ds:field>
+      <ds:field>8.0</ds:field>
+      <ds:field>34.0</ds:field>
+      <ds:field>78.0</ds:field>
+      <ds:field>9.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>Berry</ds:field>
+      <ds:field>9.0</ds:field>
+      <ds:field>53.0</ds:field>
+      <ds:field>-20.0</ds:field>
+      <ds:field>2.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>Strawberry</ds:field>
+      <ds:field>10.0</ds:field>
+      <ds:field>4.0</ds:field>
+      <ds:field>22.0</ds:field>
+      <ds:field>5.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>Banana</ds:field>
+      <ds:field>12.0</ds:field>
+      <ds:field>55.0</ds:field>
+      <ds:field>55.0</ds:field>
+      <ds:field>2.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>Durian</ds:field>
+      <ds:field>17.0</ds:field>
+      <ds:field>13.0</ds:field>
+      <ds:field>54.0</ds:field>
+      <ds:field>94.0</ds:field>
+    </ds:record>
+  </ds:data>
+</ds:datasource>
+

@@ -1,0 +1,158 @@
+<?xml version="1.0" standalone="yes"?>
+
+<rml:report keep-page-count="Yes" cache-all-properties="Yes" grid-enabled="Yes" grid-visible="No" grid-x="100" grid-y="100" description="" disable-csv-auto-wrap="No" disable-excel-auto-wrap="No" style="" xmlns:rml="http://www.elixirtech.com/ElixirReport/RML">
+  <rml:metadata version="2" location="/ElixirSamples/Report/RML/Chart/Stock Chart.rml">
+  </rml:metadata>
+  <rml:security encrypted="No" read-only="No" hide-internals="No">
+  </rml:security>
+  <rml:layout-master-set>
+    <rml:page-setup name="Default" paper="iso-a4" page-width="11905" page-height="16837" orientation="Portrait" horizontal-page-count="1" margin-top="600" margin-left="600" margin-bottom="600" margin-right="600" column-count="1" column-spacing="0" row-spacing="0" column-layout="Down Then Across">
+    </rml:page-setup>
+  </rml:layout-master-set>
+  <rml:parameters>
+  </rml:parameters>
+  <rml:datasources>
+    <rml:datasource name="Default" datasource-name="/ElixirSamples/Report/RML/Chart/datasource/HighLowData.ds" tabulate="Yes">
+      <rml:parameters>
+      </rml:parameters>
+      <rml:filters>
+      </rml:filters>
+    </rml:datasource>
+  </rml:datasources>
+  <rml:styles>
+    <rml:style name="table.field">
+      <rml:item name="RawElement.BorderStyle" value="Solid">
+      </rml:item>
+    </rml:style>
+    <rml:style name="table.label">
+      <rml:item name="RawElement.BorderStyle" value="Solid">
+      </rml:item>
+    </rml:style>
+  </rml:styles>
+  <rml:stylesheets>
+  </rml:stylesheets>
+  <rml:sections>
+    <rml:section name="Section 1" page-setup-ref="Default" data-source="Default" border-style="None" border-color="Black" show-header="Yes" show-footer="Yes" show-page-header="No" show-page-footer="No" keep-blank-pages="No" reset-page-count="No" style="">
+      <rml:section-header table-of-contents="No" height="11020" fill="No" style="Default"><rml:control-source xml:space="preserve" type="Literal" running-value="No"></rml:control-source>
+        <rml:chart preview="Yes" datasource="Default" datarange="All" name="Candlesticks" left="600" top="100" width="9400" height="3300" border-style="Solid" border-width="40" border-color="rgb(153,153,153)" border-left="Yes" border-right="Yes" border-top="Yes" border-bottom="Yes" border-radius="60" background-color="rgb(255,255,255)" style="">
+          <rml:document><cml:chart category="Stocks-Category" type="Stocks-Candlesticks" xmlns:cml="http://www.elixirtech.com/CML"><cml:highlow><cml:title anchor="North"><cml:font font-family="Times New Roman" font-weight="bold" font-color="rgb(0,0,0)" font-size="400"></cml:font><cml:control-source xml:space="preserve" type="Literal" running-value="No">Candlesticks Stock Chart</cml:control-source></cml:title><cml:legend anchor="South" custom-paint="No"><cml:font font-family="SansSerif" font-color="rgb(204,204,255)" font-size="200"></cml:font><cml:control-source xml:space="preserve" type="Literal" running-value="No"></cml:control-source></cml:legend><cml:date-source xml:space="preserve" type="Field" field="Date" running-value="No"></cml:date-source><cml:high-source xml:space="preserve" type="Field" field="High" running-value="No"></cml:high-source><cml:low-source xml:space="preserve" type="Field" field="Low" running-value="No"></cml:low-source><cml:open-source xml:space="preserve" type="Field" field="Open" running-value="No"></cml:open-source><cml:close-source xml:space="preserve" type="Field" field="Close" running-value="No"></cml:close-source><cml:volume-source xml:space="preserve" type="Field" field="Volume" running-value="No"></cml:volume-source><cml:high-low-ui plot-background="rgb(204,204,204,126)"><cml:key-axis><cml:label xml:space="preserve"><cml:font font-family="SansSerif" font-color="Black" font-size="240"></cml:font></cml:label><cml:tick show-tick-marks="Yes" label-angle="0.0" label-rotation="up"><cml:font font-family="SansSerif" font-color="Black" font-size="200"></cml:font><cml:format min-integer-digits="0" max-integer-digits="0" min-fraction-digits="0" max-fraction-digits="0" grouping-used="No" grouping-size="0" decimal-separator-always-shown="No" date-format="Short" time-format="Short" type="None"></cml:format></cml:tick></cml:key-axis><cml:value-axis><cml:label xml:space="preserve"><cml:font font-family="SansSerif" font-color="Black" font-size="240"></cml:font></cml:label><cml:tick show-tick-marks="Yes" label-angle="0.0" label-rotation="up"><cml:font font-family="SansSerif" font-color="Black" font-size="200"></cml:font><cml:format min-integer-digits="0" max-integer-digits="0" min-fraction-digits="0" max-fraction-digits="0" grouping-used="No" grouping-size="0" decimal-separator-always-shown="No" date-format="Short" time-format="Short" type="None"></cml:format></cml:tick></cml:value-axis><cml:value visible="No"><cml:font font-family="SansSerif" font-color="Black" font-size="200"></cml:font><cml:format min-integer-digits="0" max-integer-digits="0" min-fraction-digits="0" max-fraction-digits="0" grouping-used="No" grouping-size="0" decimal-separator-always-shown="No" date-format="Short" time-format="Short" type="None"></cml:format></cml:value><cml:parameters></cml:parameters></cml:high-low-ui></cml:highlow><cml:on-configure xml:space="preserve" language="javascript"></cml:on-configure></cml:chart>
+          </rml:document>
+        </rml:chart>
+        <rml:chart preview="Yes" datasource="Default" datarange="All" name="Candlesticks" left="600" top="3700" width="9400" height="3198" border-style="Solid" border-width="40" border-color="rgb(153,153,153)" border-radius="60" background-color="rgb(255,255,255)" style="">
+          <rml:document><cml:chart category="Stocks-Category" type="Stocks-High-Low-Open-Close-Volume" xmlns:cml="http://www.elixirtech.com/CML"><cml:highlow><cml:title anchor="North"><cml:font font-family="Times New Roman" font-weight="bold" font-color="rgb(0,0,0)" font-size="400"></cml:font><cml:control-source xml:space="preserve" type="Literal" running-value="No">High Low Stock Chart</cml:control-source></cml:title><cml:legend anchor="South" custom-paint="No"><cml:font font-family="SansSerif" font-color="rgb(204,204,255)" font-size="200"></cml:font><cml:control-source xml:space="preserve" type="Literal" running-value="No"></cml:control-source></cml:legend><cml:date-source xml:space="preserve" type="Field" field="Date" running-value="No"></cml:date-source><cml:high-source xml:space="preserve" type="Field" field="High" running-value="No"></cml:high-source><cml:low-source xml:space="preserve" type="Field" field="Low" running-value="No"></cml:low-source><cml:open-source xml:space="preserve" type="Field" field="Open" running-value="No"></cml:open-source><cml:close-source xml:space="preserve" type="Field" field="Close" running-value="No"></cml:close-source><cml:volume-source xml:space="preserve" type="Field" field="Volume" running-value="No"></cml:volume-source><cml:high-low-ui plot-background="rgb(204,204,204,126)"><cml:key-axis><cml:label xml:space="preserve"><cml:font font-family="SansSerif" font-color="Black" font-size="240"></cml:font></cml:label><cml:tick show-tick-marks="Yes" label-angle="0.0" label-rotation="up"><cml:font font-family="SansSerif" font-color="Black" font-size="200"></cml:font><cml:format min-integer-digits="0" max-integer-digits="0" min-fraction-digits="0" max-fraction-digits="0" grouping-used="No" grouping-size="0" decimal-separator-always-shown="No" date-format="Short" time-format="Short" type="None"></cml:format></cml:tick></cml:key-axis><cml:value-axis><cml:label xml:space="preserve"><cml:font font-family="SansSerif" font-color="Black" font-size="240"></cml:font></cml:label><cml:tick show-tick-marks="Yes" label-angle="0.0" label-rotation="up"><cml:font font-family="SansSerif" font-color="Black" font-size="200"></cml:font><cml:format min-integer-digits="0" max-integer-digits="0" min-fraction-digits="0" max-fraction-digits="0" grouping-used="No" grouping-size="0" decimal-separator-always-shown="No" date-format="Short" time-format="Short" type="None"></cml:format></cml:tick></cml:value-axis><cml:value visible="No"><cml:font font-family="SansSerif" font-color="Black" font-size="200"></cml:font><cml:format min-integer-digits="0" max-integer-digits="0" min-fraction-digits="0" max-fraction-digits="0" grouping-used="No" grouping-size="0" decimal-separator-always-shown="No" date-format="Short" time-format="Short" type="None"></cml:format></cml:value><cml:parameters></cml:parameters></cml:high-low-ui></cml:highlow><cml:on-configure xml:space="preserve" language="javascript"></cml:on-configure></cml:chart>
+          </rml:document>
+        </rml:chart>
+        <rml:table cache="Default" datarange="All" name="Default" left="500" top="7300" width="9700" height="1500" can-grow="Yes" can-shrink="Yes" style="">
+          <rml:table-header left="500" top="7300" width="9700" height="500" style="">
+            <rml:hbox visible="Yes" left="500" top="7300" width="9700" height="500" fill="Yes" style="">
+              <rml:cell weight="8043" left="500" top="7300" width="1300" height="500" fill="Yes" style="">
+                <rml:field auto-wrap="Yes" text-align="Center" font-bold="Yes" vertical-align="Center" name="Close" left="500" top="7300" width="1300" height="500" border-color="rgb(255,255,255)" border-left="No" border-top="No" border-bottom="No" background-color="rgb(204,204,204)" style="table.label"><rml:control-source xml:space="preserve" type="Literal" running-value="No">Close</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="14228" left="1800" top="7300" width="2300" height="500" fill="Yes" style="">
+                <rml:field auto-wrap="Yes" text-align="Center" font-bold="Yes" vertical-align="Center" name="Date" left="1800" top="7300" width="2300" height="500" border-color="rgb(255,255,255)" border-left="No" border-top="No" border-bottom="No" background-color="rgb(204,204,204)" style="table.label"><rml:control-source xml:space="preserve" type="Literal" running-value="No">Date</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="9898" left="4100" top="7300" width="1600" height="500" fill="Yes" style="">
+                <rml:field auto-wrap="Yes" text-align="Center" font-bold="Yes" vertical-align="Center" name="High" left="4100" top="7300" width="1600" height="500" border-color="rgb(255,255,255)" border-left="No" border-top="No" border-bottom="No" background-color="rgb(204,204,204)" style="table.label"><rml:control-source xml:space="preserve" type="Literal" running-value="No">High</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="9898" left="5700" top="7300" width="1600" height="500" fill="Yes" style="">
+                <rml:field auto-wrap="Yes" text-align="Center" font-bold="Yes" vertical-align="Center" name="Low" left="5700" top="7300" width="1600" height="500" border-color="rgb(255,255,255)" border-left="No" border-top="No" border-bottom="No" background-color="rgb(204,204,204)" style="table.label"><rml:control-source xml:space="preserve" type="Literal" running-value="No">Low</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="9893" left="7300" top="7300" width="1599" height="500" fill="Yes" style="">
+                <rml:field auto-wrap="Yes" text-align="Center" font-bold="Yes" vertical-align="Center" name="Open" left="7300" top="7300" width="1599" height="500" border-color="rgb(255,255,255)" border-left="No" border-top="No" border-bottom="No" background-color="rgb(204,204,204)" style="table.label"><rml:control-source xml:space="preserve" type="Literal" running-value="No">Open</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="8040" left="8899" top="7300" width="1301" height="500" fill="Yes" style="">
+                <rml:field auto-wrap="Yes" text-align="Center" font-bold="Yes" vertical-align="Center" name="Volume" left="8899" top="7300" width="1301" height="500" border-left="No" border-right="No" border-top="No" border-bottom="No" background-color="rgb(204,204,204)" style="table.label"><rml:control-source xml:space="preserve" type="Literal" running-value="No">Volume</rml:control-source>
+                </rml:field>
+              </rml:cell>
+            </rml:hbox>
+          </rml:table-header>
+          <rml:table-body left="500" top="7800" width="9700" height="400" style="">
+            <rml:hbox visible="Yes" left="500" top="7800" width="9700" height="400" fill="Yes" style="">
+              <rml:cell weight="8043" left="500" top="7800" width="1300" height="400" fill="Yes" style="">
+                <rml:field auto-wrap="Yes" text-align="Center" font-size="200" vertical-align="Center" name="Close" left="500" top="7800" width="1300" height="400" border-color="rgb(204,204,204)" border-top="No" background-color="rgb(255,255,255,0)" style="table.field"><rml:control-source xml:space="preserve" type="Field" field="Close" running-value="No">Close</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="14229" left="1800" top="7800" width="2300" height="400" fill="Yes" style="">
+                <rml:field auto-wrap="Yes" text-align="Center" font-size="200" vertical-align="Center" name="Date" left="1800" top="7800" width="2300" height="400" border-color="rgb(204,204,204)" border-left="No" border-right="Yes" border-top="No" border-bottom="Yes" style="table.field">
+                  <rml:format type="Date/Time" min-integer-digits="1" max-integer-digits="12" min-fraction-digits="2" max-fraction-digits="2" grouping-used="Yes" grouping-size="3" decimal-separator-always-shown="Yes" date-format="Short" time-format="Short">
+                  </rml:format><rml:control-source xml:space="preserve" type="Field" field="Date" running-value="No">Date</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="9896" left="4100" top="7800" width="1600" height="400" fill="Yes" style="">
+                <rml:field auto-wrap="Yes" text-align="Center" font-size="200" vertical-align="Center" name="High" left="4100" top="7800" width="1600" height="400" border-color="rgb(204,204,204)" border-left="No" border-top="No" border-bottom="Yes" style="table.field"><rml:control-source xml:space="preserve" type="Field" field="High" running-value="No">High</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="9899" left="5700" top="7800" width="1600" height="400" fill="Yes" style="">
+                <rml:field auto-wrap="Yes" text-align="Center" font-size="200" vertical-align="Center" name="Low" left="5700" top="7800" width="1600" height="400" border-color="rgb(204,204,204)" border-left="No" border-top="No" border-bottom="Yes" style="table.field"><rml:control-source xml:space="preserve" type="Field" field="Low" running-value="No">Low</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="9894" left="7300" top="7800" width="1599" height="400" fill="Yes" style="">
+                <rml:field auto-wrap="Yes" text-align="Center" font-size="200" vertical-align="Center" name="Open" left="7300" top="7800" width="1599" height="400" border-color="rgb(204,204,204)" border-left="No" border-top="No" border-bottom="Yes" style="table.field"><rml:control-source xml:space="preserve" type="Field" field="Open" running-value="No">Open</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="8039" left="8899" top="7800" width="1301" height="400" fill="Yes" style="">
+                <rml:field auto-wrap="Yes" text-align="Center" font-size="200" vertical-align="Center" name="Volume" left="8899" top="7800" width="1301" height="400" border-color="rgb(204,204,204)" border-left="No" border-right="Yes" border-top="No" style="table.field"><rml:control-source xml:space="preserve" type="Field" field="Volume" running-value="No">Volume</rml:control-source>
+                </rml:field>
+              </rml:cell>
+            </rml:hbox>
+          </rml:table-body>
+          <rml:table-footer left="500" top="8200" width="9700" height="600" style="">
+          </rml:table-footer>
+        </rml:table>
+        <rml:ruler>
+        </rml:ruler>
+      </rml:section-header>
+      <rml:section-footer table-of-contents="No" height="0" style="">
+        <rml:ruler>
+        </rml:ruler>
+      </rml:section-footer>
+      <rml:detail table-of-contents="No" height="0" fill="No" style="Default"><rml:control-source xml:space="preserve" type="Literal" running-value="No"></rml:control-source>
+        <rml:ruler>
+        </rml:ruler>
+      </rml:detail>
+      <rml:ruler>
+      </rml:ruler>
+    </rml:section>
+  </rml:sections>
+  <rml:sequence>
+    <rml:section-invocation section="Section 1" enabled="Yes">
+      <rml:parameters>
+      </rml:parameters>
+    </rml:section-invocation>
+  </rml:sequence>
+  <rml:rendering>
+    <rml:render-details mime-type="application/x-glint">
+      <rml:parameters><rml:param xml:space="preserve" key="Tree">No</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/vnd.ms-excel">
+      <rml:parameters><rml:param xml:space="preserve" key="Snap">No</rml:param><rml:param xml:space="preserve" key="Paged">No</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="text/xhtml">
+      <rml:parameters><rml:param xml:space="preserve" key="SVGPassThrough">No</rml:param><rml:param xml:space="preserve" key="Paged">Yes</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+      <rml:parameters>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="text/html">
+      <rml:parameters><rml:param xml:space="preserve" key="SVGPassThrough">No</rml:param><rml:param xml:space="preserve" key="Paged">Yes</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/rtf">
+      <rml:parameters><rml:param xml:space="preserve" key="Comments"></rml:param><rml:param xml:space="preserve" key="Word2003">Yes</rml:param><rml:param xml:space="preserve" key="Author"></rml:param><rml:param xml:space="preserve" key="Company"></rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/pdf">
+      <rml:parameters><rml:param xml:space="preserve" key="RenderAsImage" enabled="Yes">No</rml:param><rml:param xml:space="preserve" key="OwnerPassword" enabled="Yes"></rml:param><rml:param xml:space="preserve" key="CJKMappingURL"></rml:param><rml:param xml:space="preserve" key="AllowFillIn" enabled="Yes">No</rml:param><rml:param xml:space="preserve" key="AllowAssembly" enabled="Yes">No</rml:param><rml:param xml:space="preserve" key="Encryption" enabled="Yes">No</rml:param><rml:param xml:space="preserve" key="AllowModifyContents" enabled="Yes">No</rml:param><rml:param xml:space="preserve" key="RenderAsImageDPI" enabled="Yes"></rml:param><rml:param xml:space="preserve" key="EncryptionStrength" enabled="Yes">128 bits</rml:param><rml:param xml:space="preserve" key="AllowScreenReaders" enabled="Yes">No</rml:param><rml:param xml:space="preserve" key="AllowModifyAnnotations" enabled="Yes">No</rml:param><rml:param xml:space="preserve" key="BlankPageOnEmptyFile">No</rml:param><rml:param xml:space="preserve" key="AllowDegradedPrinting" enabled="Yes">No</rml:param><rml:param xml:space="preserve" key="AllowCopy" enabled="Yes">No</rml:param><rml:param xml:space="preserve" key="AllowPrinting" enabled="Yes">No</rml:param><rml:param xml:space="preserve" key="UserPassword" enabled="Yes"></rml:param><rml:param xml:space="preserve" key="Greyscale" enabled="Yes">No</rml:param><rml:param xml:space="preserve" key="RenderTextAPI">No</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+  </rml:rendering></rml:report>
+

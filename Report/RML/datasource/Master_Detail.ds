@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ds:datasource xmlns:ds="http://www.elixirtech.com/DataSource" name="Master_Detail" type="Text" path="/ElixirSamples/Report/RML/datasource/Master_Detail.ds" description="">
+  <ds:schema case-sensitive="Yes">
+    <ds:column name="employee_id" type="Long" />
+    <ds:column name="full_name" type="String" />
+    <ds:column name="department_id" type="Long" />
+    <ds:column name="hire_date" type="Timestamp" />
+    <ds:column name="salary" type="Double" />
+    <ds:column name="education_level" type="String" />
+    <ds:column name="gender" type="String" />
+  </ds:schema>
+  <ds:security name="" />
+  <ds:text encoding="UTF-8" skip-first-row="Yes" url="repository:/ElixirSamples/Report/RML/resource/data/Employee.csv">
+    <ds:delimited delimiter="," qualifier="none" />
+  </ds:text>
+</ds:datasource>
+
