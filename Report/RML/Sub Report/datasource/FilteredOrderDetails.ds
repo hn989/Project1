@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ds:datasource xmlns:ds="http://www.elixirtech.com/DataSource" name="FilteredOrderDetails" type="Composite" path="/ElixirSamples/Report/RML/Sub Report/datasource/FilteredOrderDetails.ds" description="" version="2">
+  <ds:schema case-sensitive="Yes" />
+  <ds:security name="" />
+  <ds:composite />
+  <graph version="1.0">
+    <node id="0" class="com.elixirtech.ensemble.canvas.CompositeDiagram">
+      <property name="name" xml:space="preserve">Ensemble</property>
+      <property name="policy" xml:space="preserve">com.elixirtech.ensemble.canvas.EnsemblePolicy</property>
+    </node>
+    <node id="1" class="com.elixirtech.ensemble.canvas.ResultGO">
+      <property name="text" xml:space="preserve">Result</property>
+      <property name="fill" xml:space="preserve">Wheat</property>
+      <property name="rect" xml:space="preserve">(530,50,610,90)</property>
+      <property name="minheight" xml:space="preserve">40</property>
+      <property name="minwidth" xml:space="preserve">60</property>
+      <user-property name="InternalName" xml:space="preserve">Result</user-property>
+    </node>
+    <node id="2" class="com.elixirtech.ensemble.canvas.FilterGO">
+      <property name="text" xml:space="preserve">Filter</property>
+      <property name="fill" xml:space="preserve">Wheat</property>
+      <property name="rect" xml:space="preserve">(325,45,405,95)</property>
+      <property name="minheight" xml:space="preserve">40</property>
+      <property name="minwidth" xml:space="preserve">60</property>
+      <user-property name="Filter_JavaScript" xml:space="preserve"></user-property>
+      <user-property name="InternalName" xml:space="preserve">Filter</user-property>
+    </node>
+    <node id="3" class="com.elixirtech.ensemble.canvas.FilterNode">
+      <property name="Name" xml:space="preserve">ORDERID</property>
+      <property name="Value" xml:space="preserve">${OrderID#choice(1001,1002,1003)#1003}</property>
+      <property name="When" xml:space="preserve">Equals</property>
+      <property name="SetId" xml:space="preserve">0</property>
+    </node>
+    <node id="4" class="com.elixirtech.ensemble.canvas.DataFlowGO">
+      <property name="points" xml:space="preserve">(434,70)(478,70)</property>
+    </node>
+    <node id="5" class="com.elixirtech.ensemble.canvas.DataSourceGO">
+      <property name="text" xml:space="preserve">OrderDetailsa</property>
+      <property name="fill" xml:space="preserve">Wheat</property>
+      <property name="rect" xml:space="preserve">(100,50,180,90)</property>
+      <property name="minheight" xml:space="preserve">40</property>
+      <property name="minwidth" xml:space="preserve">60</property>
+      <user-property name="DataSource" xml:space="preserve">/ElixirSamples/Report/RML/Sub Report/datasource/OrderDetails.ds</user-property>
+      <user-property name="DataSource_Discard" xml:space="preserve"></user-property>
+      <user-property name="InternalName" xml:space="preserve">OrderDetailsa</user-property>
+    </node>
+    <node id="6" class="com.elixirtech.ensemble.canvas.DataFlowGO">
+      <property name="points" xml:space="preserve">(209,70)(296,70)</property>
+    </node>
+    <relationship type="Owns" from="0" to="1" />
+    <relationship type="Owns" from="0" to="2" />
+    <relationship type="Owns" from="0" to="4" />
+    <relationship type="Owns" from="0" to="5" />
+    <relationship type="Owns" from="0" to="6" />
+    <relationship type="Repaints" from="1" to="4">
+      <user-property name="stop" xml:space="preserve">true</user-property>
+    </relationship>
+    <relationship type="Repaints" from="2" to="4">
+      <user-property name="start" xml:space="preserve">true</user-property>
+    </relationship>
+    <relationship type="Repaints" from="2" to="6">
+      <user-property name="stop" xml:space="preserve">true</user-property>
+    </relationship>
+    <relationship type="Owns" from="2" to="3" />
+    <relationship type="Repaints" from="5" to="6">
+      <user-property name="start" xml:space="preserve">true</user-property>
+    </relationship>
+  </graph>
+</ds:datasource>
+

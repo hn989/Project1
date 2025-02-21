@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ds:datasource xmlns:ds="http://www.elixirtech.com/DataSource" name="FruitSales" type="Data" path="/ElixirSamples/Report/RML/Chart/datasource/FruitSales.ds" description="">
+  <ds:schema case-sensitive="Yes">
+    <ds:column name="Company" type="String" />
+    <ds:column name="Fruit" type="String" />
+    <ds:column name="2000" type="Long" />
+    <ds:column name="1999" type="Long" />
+    <ds:column name="1998" type="Long" />
+    <ds:column name="1997" type="Long" />
+  </ds:schema>
+  <ds:security name="" />
+  <ds:data>
+    <ds:record>
+      <ds:field>A</ds:field>
+      <ds:field>Apple</ds:field>
+      <ds:field>201</ds:field>
+      <ds:field>102</ds:field>
+      <ds:field>199</ds:field>
+      <ds:field>232</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>A</ds:field>
+      <ds:field>Orange</ds:field>
+      <ds:field>323</ds:field>
+      <ds:field>32</ds:field>
+      <ds:field>55</ds:field>
+      <ds:field>23</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>A</ds:field>
+      <ds:field>Strawberry</ds:field>
+      <ds:field>99</ds:field>
+      <ds:field>20</ds:field>
+      <ds:field>39</ds:field>
+      <ds:field>23</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>B</ds:field>
+      <ds:field>Apple</ds:field>
+      <ds:field>201</ds:field>
+      <ds:field>102</ds:field>
+      <ds:field>199</ds:field>
+      <ds:field>232</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>B</ds:field>
+      <ds:field>Orange</ds:field>
+      <ds:field>323</ds:field>
+      <ds:field>32</ds:field>
+      <ds:field>55</ds:field>
+      <ds:field>23</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>B</ds:field>
+      <ds:field>Strawberry</ds:field>
+      <ds:field>99</ds:field>
+      <ds:field>20</ds:field>
+      <ds:field>39</ds:field>
+      <ds:field>70</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>B</ds:field>
+      <ds:field>Berry</ds:field>
+      <ds:field>23</ds:field>
+      <ds:field>32</ds:field>
+      <ds:field>34</ds:field>
+      <ds:field>76</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>C</ds:field>
+      <ds:field>Apple</ds:field>
+      <ds:field>120</ds:field>
+      <ds:field>232</ds:field>
+      <ds:field>232</ds:field>
+      <ds:field>322</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>C</ds:field>
+      <ds:field>Orange</ds:field>
+      <ds:field>323</ds:field>
+      <ds:field>32</ds:field>
+      <ds:field>43</ds:field>
+      <ds:field>787</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>C</ds:field>
+      <ds:field>Strawberry</ds:field>
+      <ds:field>122</ds:field>
+      <ds:field>2</ds:field>
+      <ds:field>2</ds:field>
+      <ds:field>70</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>C</ds:field>
+      <ds:field>Berry</ds:field>
+      <ds:field>343</ds:field>
+      <ds:field>232</ds:field>
+      <ds:field>23</ds:field>
+      <ds:field>332</ds:field>
+    </ds:record>
+  </ds:data>
+</ds:datasource>
+

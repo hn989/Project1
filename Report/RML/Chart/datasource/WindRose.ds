@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ds:datasource xmlns:ds="http://www.elixirtech.com/DataSource" name="WindRose" type="Text" path="/ElixirSamples/Report/RML/Chart/datasource/WindRose.ds" description="">
+  <ds:schema case-sensitive="Yes">
+    <ds:column name="TIMESTAMP" type="String" />
+    <ds:column name="VEL" type="Long" />
+    <ds:column name="DIR" type="Long" />
+    <ds:column name="VELMS" type="Double" />
+  </ds:schema>
+  <ds:security name="" />
+  <ds:text encoding="UTF-8" skip-first-row="Yes" url="repository:/ElixirSamples/Report/RML/Chart/resource/data/WindRose.csv">
+    <ds:delimited delimiter="," qualifier="none" />
+  </ds:text>
+</ds:datasource>
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ds:datasource xmlns:ds="http://www.elixirtech.com/DataSource" name="Polar" type="Data" path="/ElixirSamples/Report/RML/Chart/datasource/Polar.ds" description="">
+  <ds:schema case-sensitive="Yes">
+    <ds:column name="Axis" type="Long" />
+    <ds:column name="Phase 1" type="Double" />
+    <ds:column name="Phase 2" type="Double" />
+    <ds:column name="Phase 3" type="Double" />
+    <ds:column name="Phase 4" type="Double" />
+    <ds:column name="Phase 5" type="Double" />
+  </ds:schema>
+  <ds:security name="" />
+  <ds:data>
+    <ds:record>
+      <ds:field>0</ds:field>
+      <ds:field>200.0</ds:field>
+      <ds:field>100.0</ds:field>
+      <ds:field>300.0</ds:field>
+      <ds:field>255.0</ds:field>
+      <ds:field>353.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>45</ds:field>
+      <ds:field>45.0</ds:field>
+      <ds:field>60.0</ds:field>
+      <ds:field>70.0</ds:field>
+      <ds:field>20.0</ds:field>
+      <ds:field>40.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>90</ds:field>
+      <ds:field>100.0</ds:field>
+      <ds:field>80.0</ds:field>
+      <ds:field>100.0</ds:field>
+      <ds:field>45.0</ds:field>
+      <ds:field>60.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>135</ds:field>
+      <ds:field>270.0</ds:field>
+      <ds:field>50.0</ds:field>
+      <ds:field>30.0</ds:field>
+      <ds:field>15.0</ds:field>
+      <ds:field>75.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>180</ds:field>
+      <ds:field>285.0</ds:field>
+      <ds:field>20.0</ds:field>
+      <ds:field>65.0</ds:field>
+      <ds:field>234.0</ds:field>
+      <ds:field>43.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>225</ds:field>
+      <ds:field>330.0</ds:field>
+      <ds:field>43.0</ds:field>
+      <ds:field>53.0</ds:field>
+      <ds:field>12.0</ds:field>
+      <ds:field>97.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>270</ds:field>
+      <ds:field>52.0</ds:field>
+      <ds:field>235.0</ds:field>
+      <ds:field>63.0</ds:field>
+      <ds:field>124.0</ds:field>
+      <ds:field>255.0</ds:field>
+    </ds:record>
+    <ds:record>
+      <ds:field>315</ds:field>
+      <ds:field>235.0</ds:field>
+      <ds:field>21.0</ds:field>
+      <ds:field>53.0</ds:field>
+      <ds:field>134.0</ds:field>
+      <ds:field>53.0</ds:field>
+    </ds:record>
+  </ds:data>
+</ds:datasource>
+

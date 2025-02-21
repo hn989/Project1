@@ -1,0 +1,170 @@
+<?xml version="1.0" standalone="yes"?>
+
+<rml:report keep-page-count="Yes" cache-all-properties="Yes" grid-enabled="Yes" grid-visible="No" grid-x="100" grid-y="100" description="" disable-csv-auto-wrap="No" disable-excel-auto-wrap="No" style="" xmlns:rml="http://www.elixirtech.com/ElixirReport/RML">
+  <rml:metadata version="2" location="/ElixirSamples/Report/RML/Chart/XY Chart.rml">
+  </rml:metadata>
+  <rml:security encrypted="No" read-only="No" hide-internals="No">
+  </rml:security>
+  <rml:layout-master-set>
+    <rml:page-setup name="Default" paper="iso-a4" page-width="11905" page-height="16837" orientation="Portrait" horizontal-page-count="1" margin-top="600" margin-left="600" margin-bottom="600" margin-right="600" column-count="1" column-spacing="0" row-spacing="0" column-layout="Down Then Across">
+    </rml:page-setup>
+  </rml:layout-master-set>
+  <rml:parameters>
+  </rml:parameters>
+  <rml:datasources>
+    <rml:datasource name="XY Datasource" datasource-name="/ElixirSamples/Report/RML/Chart/datasource/XYData With Negative Values.ds" tabulate="Yes">
+      <rml:parameters>
+      </rml:parameters>
+      <rml:filters>
+      </rml:filters>
+    </rml:datasource>
+    <rml:datasource name="Company Analysis (Small)" datasource-name="/ElixirSamples/Report/RML/Chart/datasource/Company Analysis (Small).ds" tabulate="Yes">
+      <rml:parameters>
+      </rml:parameters>
+      <rml:filters>
+      </rml:filters>
+    </rml:datasource>
+  </rml:datasources>
+  <rml:styles>
+    <rml:style name="detail">
+      <rml:item name="Common.KeepTogether" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="field">
+      <rml:item name="Grid.AutoWrap" value="Yes">
+      </rml:item>
+      <rml:item name="TextElement.FontSize" value="240">
+      </rml:item>
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="TextElement.FontName" value="Serif">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="field.literal" base-name="field">
+      <rml:item name="RawElement.Growable" value="No">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="No">
+      </rml:item>
+    </rml:style>
+    <rml:style name="group-footer">
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="group-header">
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="rect">
+      <rml:item name="RawElement.BorderStyle" value="Solid">
+      </rml:item>
+      <rml:item name="RawElement.BorderColor" value="rgb(0,0,0)">
+      </rml:item>
+      <rml:item name="Rectangle.BorderTop" value="Yes">
+      </rml:item>
+      <rml:item name="Rectangle.BorderBottom" value="Yes">
+      </rml:item>
+      <rml:item name="Common.BackgroundColor" value="rgb(255,255,255)">
+      </rml:item>
+      <rml:item name="Rectangle.BorderRight" value="Yes">
+      </rml:item>
+      <rml:item name="Rectangle.BorderLeft" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="sub-report">
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="table">
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+    </rml:style>
+  </rml:styles>
+  <rml:stylesheets>
+  </rml:stylesheets>
+  <rml:sections>
+    <rml:section name="Section1" page-setup-ref="Default" data-source="XY Datasource" border-style="None" border-color="Black" show-header="Yes" show-footer="Yes" show-page-header="Yes" show-page-footer="Yes" keep-blank-pages="No" reset-page-count="No" style="">
+      <rml:watermark report="" section="" enabled="No">
+        <rml:parameters>
+        </rml:parameters>
+      </rml:watermark>
+      <rml:section-header table-of-contents="No" height="19680" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No"></rml:control-source>
+        <rml:chart image-resolution="72" preview="Yes" datasource="XY Datasource" datarange="All" name="XY Line Chart With Colour Legend" left="0" top="13700" width="10200" height="5700" border-style="Solid" border-width="40" border-color="rgb(153,153,153)" border-left="No" border-right="No" border-top="No" border-bottom="No" border-radius="60" background-color="rgb(255,255,255,169)" style="">
+          <rml:document><chart category="XY-Category" type="Bubble"><bubble><title anchor="North"><font font-family="Times New Roman" font-weight="bold" font-color="Black" font-size="400"></font><control-source xml:space="preserve" type="Literal" running-value="No"></control-source></title><legend anchor="South" custom-paint="No"><font font-family="SansSerif" font-color="Black" font-size="200"></font><control-source xml:space="preserve" type="Literal" running-value="No"></control-source></legend><group-on-source xml:space="preserve" type="Field" field="Fruit" running-value="No"></group-on-source><x-source xml:space="preserve" type="Field" field="X" running-value="No"></x-source><y-source xml:space="preserve" type="Field" field="Y1" running-value="No"></y-source><z-source xml:space="preserve" type="Field" field="X" running-value="No"></z-source><bubble-ui diameter-ratio="0.5" domain-gridlines-visible="No" range-gridlines-visible="No"><x-axis><label xml:space="preserve"><font font-family="SansSerif" font-color="Black" font-size="240"></font></label><tick show-tick-marks="Yes" label-angle="0.0" label-rotation="up"><font font-family="SansSerif" font-color="Black" font-size="200"></font><format min-integer-digits="0" max-integer-digits="0" min-fraction-digits="0" max-fraction-digits="0" grouping-used="No" grouping-size="0" decimal-separator-always-shown="No" date-format="Short" time-format="Short" type="None"></format></tick></x-axis><y-axis><label xml:space="preserve"><font font-family="SansSerif" font-color="Black" font-size="240"></font></label><tick show-tick-marks="Yes" label-angle="0.0" label-rotation="up"><font font-family="SansSerif" font-color="Black" font-size="200"></font><format min-integer-digits="0" max-integer-digits="0" min-fraction-digits="0" max-fraction-digits="0" grouping-used="No" grouping-size="0" decimal-separator-always-shown="No" date-format="Short" time-format="Short" type="None"></format></tick></y-axis><value visible="No"><font font-family="SansSerif" font-color="Black" font-size="200"></font><format min-integer-digits="0" max-integer-digits="0" min-fraction-digits="0" max-fraction-digits="0" grouping-used="No" grouping-size="0" decimal-separator-always-shown="No" date-format="Short" time-format="Short" type="None"></format></value><axis-scale>scale-domain-axis</axis-scale><parameters></parameters></bubble-ui></bubble><on-configure xml:space="preserve" language="javascript"></on-configure></chart>
+          </rml:document>
+        </rml:chart>
+        <rml:chart preview="Yes" datasource="Company Analysis (Small)" datarange="All" left="0" top="7300" width="10200" height="5100" border-style="Solid" border-width="40" border-color="rgb(153,153,153)" border-left="No" border-right="No" border-top="No" border-bottom="No" border-radius="60" background-color="rgb(255,255,255)" style="">
+          <rml:document><cml:chart category="XY-Category" type="HeatMapXY" xmlns:cml="http://www.elixirtech.com/CML"><cml:heatmapxy lower-bound="0.0" upper-bound="50.0" paint-scale="lookup-paintscale" default-paint="rgb(153,153,255)"><cml:title anchor="None"><cml:font font-family="Times New Roman" font-weight="bold" font-color="Black" font-size="400"></cml:font><cml:control-source xml:space="preserve" type="Literal" running-value="No"></cml:control-source></cml:title><cml:legend anchor="None" custom-paint="No"><cml:font font-family="SansSerif" font-color="Black" font-size="200"></cml:font><cml:control-source xml:space="preserve" type="Literal" running-value="No"></cml:control-source></cml:legend><cml:x-source xml:space="preserve" type="Field" field="X" running-value="No"></cml:x-source><cml:y-source xml:space="preserve" type="Field" field="Y" running-value="No"></cml:y-source><cml:z-source xml:space="preserve" type="Field" field="Taxes" running-value="No"></cml:z-source><cml:heatmapxy-ui scale-legend-visible="Yes" scale-legend-label="Taxes Range" scale-legend-position="right" domain-gridlines-visible="No" range-gridlines-visible="No" plot-background="rgb(255,255,255)"><cml:x-axis><cml:label xml:space="preserve"><cml:font font-family="SansSerif" font-color="rgb(0,0,0)" font-size="240"></cml:font></cml:label><cml:tick show-tick-marks="Yes" label-angle="0.0" label-rotation="up"><cml:font font-family="SansSerif" font-color="rgb(0,0,0)" font-size="200"></cml:font><cml:format min-integer-digits="0" max-integer-digits="0" min-fraction-digits="0" max-fraction-digits="0" grouping-used="No" grouping-size="0" decimal-separator-always-shown="No" date-format="Short" time-format="Short" type="None"></cml:format></cml:tick></cml:x-axis><cml:y-axis><cml:label xml:space="preserve"><cml:font font-family="SansSerif" font-color="rgb(0,0,0)" font-size="240"></cml:font></cml:label><cml:tick show-tick-marks="Yes" label-angle="0.0" label-rotation="up"><cml:font font-family="SansSerif" font-color="rgb(0,0,0)" font-size="200"></cml:font><cml:format min-integer-digits="0" max-integer-digits="0" min-fraction-digits="0" max-fraction-digits="0" grouping-used="No" grouping-size="0" decimal-separator-always-shown="No" date-format="Short" time-format="Short" type="None"></cml:format></cml:tick></cml:y-axis><cml:parameters></cml:parameters></cml:heatmapxy-ui><cml:heatmap-lookup-item paint="rgb(204,51,0)" value="10.0" name="0-10"></cml:heatmap-lookup-item><cml:heatmap-lookup-item paint="rgb(255,255,0)" value="20.0" name="10-20"></cml:heatmap-lookup-item><cml:heatmap-lookup-item paint="rgb(51,255,255)" value="30.0" name="20-30"></cml:heatmap-lookup-item><cml:heatmap-lookup-item paint="rgb(0,153,51)" value="40.0" name="30-40"></cml:heatmap-lookup-item><cml:heatmap-lookup-item paint="rgb(0,0,102)" value="50.0" name="40-50"></cml:heatmap-lookup-item><cml:heatmap-lookup-item paint="rgb(153,0,204)" value="60.0" name="50-60"></cml:heatmap-lookup-item><cml:heatmap-lookup-item paint="rgb(255,204,204)" value="70.0" name="60-70"></cml:heatmap-lookup-item></cml:heatmapxy><cml:on-configure xml:space="preserve" language="javascript"></cml:on-configure></cml:chart>
+          </rml:document>
+        </rml:chart>
+        <rml:chart image-resolution="72" preview="Yes" datasource="XY Datasource" datarange="Group" name="XY Line Chart With Colour Legend" left="0" top="700" width="10300" height="5400" border-style="Solid" border-width="40" border-color="rgb(153,153,153))" border-left="No" border-right="No" border-top="No" border-bottom="No" border-radius="60" background-color="rgb(255,255,255,169)" style="">
+          <rml:document><chart category="XY-Category" type="XY-CurveLine"><xy><title anchor="None"><font font-family="Times New Roman" font-weight="bold" font-color="rgb(0,0,0)" font-size="400"></font><control-source xml:space="preserve" type="Literal" running-value="No"></control-source></title><legend anchor="South" custom-paint="No"><font font-family="Arial" font-weight="bold" font-color="rgb(255,255,51)" font-size="280"></font><control-source xml:space="preserve" type="Literal" running-value="No"></control-source></legend><key-source xml:space="preserve" type="Field" field="X" running-value="No"></key-source><value-sources><control-source xml:space="preserve" type="Field" field="Y1" running-value="No" display-name=""></control-source><control-source xml:space="preserve" type="Field" field="Y2" running-value="No" display-name=""></control-source></value-sources><xy-ui domain-gridlines-visible="No" range-gridlines-visible="No" plot-background="rgb(255,255,255)"><x-axis><label xml:space="preserve"><font font-family="Arial" font-color="rgb(0,0,0)" font-size="240"></font></label><tick show-tick-marks="Yes" label-angle="0.0" label-rotation="up"><font font-family="Arial" font-color="Black" font-size="200"></font><format min-integer-digits="0" max-integer-digits="0" min-fraction-digits="0" max-fraction-digits="0" grouping-used="No" grouping-size="0" decimal-separator-always-shown="No" date-format="Short" time-format="Short" type="None"></format></tick></x-axis><y-axis><label xml:space="preserve"><font font-family="Arial" font-color="rgb(0,0,0)" font-size="240"></font></label><tick show-tick-marks="Yes" label-angle="0.0" label-rotation="up"><font font-family="Arial" font-color="Black" font-size="200"></font><format min-integer-digits="0" max-integer-digits="0" min-fraction-digits="0" max-fraction-digits="0" grouping-used="No" grouping-size="0" decimal-separator-always-shown="No" date-format="Short" time-format="Short" type="None"></format></tick></y-axis><value visible="No"><font font-family="SansSerif" font-color="Black" font-size="200"></font><format min-integer-digits="0" max-integer-digits="0" min-fraction-digits="0" max-fraction-digits="0" grouping-used="No" grouping-size="0" decimal-separator-always-shown="No" date-format="Short" time-format="Short" type="None"></format></value><parameters></parameters></xy-ui></xy><on-configure xml:space="preserve" language="javascript"></on-configure></chart>
+          </rml:document>
+        </rml:chart>
+        <rml:field auto-wrap="Yes" font-name="Times New Roman" font-size="320" font-bold="Yes" left="0" top="200" width="10200" height="500" background-color="rgb(204,204,255)" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">XY Curve Line Chart</rml:control-source>
+        </rml:field>
+        <rml:field auto-wrap="Yes" font-name="Times New Roman" font-size="320" font-bold="Yes" left="0" top="6800" width="10180" height="500" background-color="rgb(204,204,255)" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Heat Map Chart</rml:control-source>
+        </rml:field>
+        <rml:field auto-wrap="Yes" font-name="Times New Roman" font-size="320" font-bold="Yes" left="0" top="13200" width="10180" height="500" background-color="rgb(204,204,255)" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Bubble Chart</rml:control-source>
+        </rml:field>
+        <rml:page-break position="12900" style="">
+        </rml:page-break>
+        <rml:ruler>
+        </rml:ruler>
+      </rml:section-header>
+      <rml:section-footer table-of-contents="No" height="0" style="">
+        <rml:ruler>
+        </rml:ruler>
+      </rml:section-footer>
+      <rml:page-header height="0" style="">
+        <rml:ruler>
+        </rml:ruler>
+      </rml:page-header>
+      <rml:page-footer height="0" style="">
+        <rml:ruler>
+        </rml:ruler>
+      </rml:page-footer>
+      <rml:detail table-of-contents="No" height="0" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No"></rml:control-source>
+        <rml:ruler>
+        </rml:ruler>
+      </rml:detail>
+      <rml:ruler>
+        <rml:mark value="10180">
+        </rml:mark>
+      </rml:ruler>
+    </rml:section>
+  </rml:sections>
+  <rml:sequence>
+    <rml:section-invocation report="" section="Section1" enabled="Yes">
+      <rml:parameters>
+      </rml:parameters>
+    </rml:section-invocation>
+  </rml:sequence>
+  <rml:rendering>
+    <rml:render-details mime-type="application/x-glint">
+      <rml:parameters><rml:param xml:space="preserve" key="Tree">No</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+      <rml:parameters>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/pdf">
+      <rml:parameters><rml:param xml:space="preserve" key="RenderAsImage">No</rml:param><rml:param xml:space="preserve" key="OwnerPassword"></rml:param><rml:param xml:space="preserve" key="CJKMappingURL"></rml:param><rml:param xml:space="preserve" key="AllowFillIn">No</rml:param><rml:param xml:space="preserve" key="AllowAssembly">No</rml:param><rml:param xml:space="preserve" key="Encryption">No</rml:param><rml:param xml:space="preserve" key="RenderAsImageDPI"></rml:param><rml:param xml:space="preserve" key="AllowModifyContents">No</rml:param><rml:param xml:space="preserve" key="EncryptionStrength">128 bits</rml:param><rml:param xml:space="preserve" key="AllowScreenReaders">No</rml:param><rml:param xml:space="preserve" key="AllowModifyAnnotations">No</rml:param><rml:param xml:space="preserve" key="BlankPageOnEmptyFile">No</rml:param><rml:param xml:space="preserve" key="AllowDegradedPrinting">No</rml:param><rml:param xml:space="preserve" key="AllowCopy">No</rml:param><rml:param xml:space="preserve" key="UserPassword"></rml:param><rml:param xml:space="preserve" key="AllowPrinting">No</rml:param><rml:param xml:space="preserve" key="RenderTextAPI">Yes</rml:param><rml:param xml:space="preserve" key="Greyscale">No</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+  </rml:rendering></rml:report>
+

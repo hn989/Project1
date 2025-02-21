@@ -1,0 +1,174 @@
+<?xml version="1.0" standalone="yes"?>
+
+<rml:report keep-page-count="Yes" cache-all-properties="Yes" grid-enabled="Yes" grid-visible="No" grid-x="100" grid-y="100" description="" disable-csv-auto-wrap="No" disable-excel-auto-wrap="No" style="" xmlns:rml="http://www.elixirtech.com/ElixirReport/RML">
+  <rml:metadata version="2" location="/ElixirSamples/Report/RML/Pivot Table.rml">
+  </rml:metadata>
+  <rml:security encrypted="No" read-only="No" hide-internals="No">
+  </rml:security>
+  <rml:layout-master-set>
+    <rml:page-setup name="Default" paper="iso-a4" page-width="16837" page-height="11905" orientation="Landscape" horizontal-page-count="1" margin-top="600" margin-left="600" margin-bottom="600" margin-right="600" column-count="1" column-spacing="0" row-spacing="0" column-layout="Down Then Across">
+    </rml:page-setup>
+  </rml:layout-master-set>
+  <rml:parameters><rml:param xml:space="preserve" key="Name" enabled="Yes">${Staff Name#choice(Alan Koh,Joanne Tan,Jasmine Chen)#Alan Koh}</rml:param>
+  </rml:parameters>
+  <rml:datasources>
+    <rml:datasource name="Default" datasource-name="/ElixirSamples/Report/RML/datasource/Manpower.ds" tabulate="Yes">
+      <rml:parameters>
+      </rml:parameters>
+      <rml:filters>
+      </rml:filters>
+    </rml:datasource>
+  </rml:datasources>
+  <rml:styles>
+    <rml:style name="detail">
+      <rml:item name="Common.KeepTogether" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="field">
+      <rml:item name="TextElement.FontSize" value="240">
+      </rml:item>
+      <rml:item name="Grid.AutoWrap" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="TextElement.FontName" value="Serif">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="field.literal" base-name="field">
+      <rml:item name="RawElement.Growable" value="No">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="No">
+      </rml:item>
+    </rml:style>
+    <rml:style name="group-footer">
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="group-header">
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="rect">
+      <rml:item name="RawElement.BorderStyle" value="Solid">
+      </rml:item>
+      <rml:item name="Rectangle.BorderTop" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.BorderColor" value="rgb(0,0,0)">
+      </rml:item>
+      <rml:item name="Rectangle.BorderBottom" value="Yes">
+      </rml:item>
+      <rml:item name="Common.BackgroundColor" value="rgb(255,255,255)">
+      </rml:item>
+      <rml:item name="Rectangle.BorderRight" value="Yes">
+      </rml:item>
+      <rml:item name="Rectangle.BorderLeft" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="sub-report">
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="table">
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+    </rml:style>
+  </rml:styles>
+  <rml:stylesheets>
+  </rml:stylesheets>
+  <rml:sections>
+    <rml:section name="Section 1" page-setup-ref="Default" data-source="Default" border-style="None" border-color="Black" show-header="Yes" show-footer="Yes" show-page-header="Yes" show-page-footer="Yes" keep-blank-pages="No" reset-page-count="No" style="">
+      <rml:watermark report="" section="" enabled="No">
+        <rml:parameters>
+        </rml:parameters>
+      </rml:watermark>
+      <rml:section-header table-of-contents="No" can-grow="Yes" can-shrink="Yes" height="7620" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No"></rml:control-source>
+        <rml:cube-table collapse-rows="No" collapse-columns="No" keep-row-totals="Yes" keep-column-totals="Yes" column-totals-title="" row-totals-title="" show-column-headers="Yes" show-row-headers="Yes" show-column-totals-after-details="Yes" show-row-totals-after-details="Yes" keep-together="Yes" cache="Default" datarange="All" can-grow-width="Yes" can-shrink-width="Yes" can-grow-hpage-count="No" merge-header-borders="Yes" name="All" visible="Yes" fill="Yes" left="0" top="1399" width="13957" height="6220" border-width="40" border-color="Black" border-radius="40" background-color="rgb(255,255,204)" can-grow="Yes" can-shrink="No" padding-left="0" padding-right="0" padding-top="0" padding-bottom="0" style="">
+          <rml:cube-column font-name="Arial" font-size="200" background-top-left="rgb(255,204,102)" background-bottom-right="rgb(204,204,255)" padding-left="60" padding-right="60" padding-top="60" padding-bottom="60" border-color="Black" title="Educational Level" style="Header">
+            <rml:cube-level name="education_level" sort="Ascending" group-on="Each Value" group-data="" hide-totals="No">
+            </rml:cube-level>
+          </rml:cube-column>
+          <rml:cube-row text-align="Left" font-name="Arial" font-size="200" background-top-left="rgb(255,204,102)" background-bottom-right="rgb(204,204,255)" padding-left="60" padding-right="60" padding-top="60" padding-bottom="60" border-color="Black" title="Department" style="Header Country">
+            <rml:cube-level name="department_description" sort="Ascending" group-on="Each Value" group-data="" hide-totals="No">
+            </rml:cube-level>
+          </rml:cube-row>
+          <rml:cube-measure name="employee_id" function="Count" pattern="Total Employees" text-align="Right" icon-align="Left" show-icon="Yes" font-name="Arial" font-size="200" padding-left="60" padding-right="60" padding-top="60" padding-bottom="60" style="Body">
+            <rml:cell-render foreground="rgb(0,0,0)" background="rgb(255,153,153)" icon="repository:/ElixirSamples/Report/RML/resource/image/icon-up-green.gif" when="Not Less Than" test="50">
+            </rml:cell-render>
+            <rml:cell-render foreground="rgb(0,0,0)" background="rgb(204,255,204)" icon="repository:/ElixirSamples/Report/RML/resource/image/icon-down-red.gif" when="Not Less Than" test="25">
+            </rml:cell-render>
+            <rml:cell-render foreground="rgb(0,0,0)" background="rgb(255,255,204)" icon="" when="" test="">
+            </rml:cell-render>
+          </rml:cube-measure>
+        </rml:cube-table>
+        <rml:field auto-wrap="Yes" text-align="Center" font-name="Times New Roman" font-size="440" font-bold="Yes" vertical-align="Center" fill="Yes" left="0" top="0" width="13957" height="1020" border-style="None" background-color="rgb(255,255,255)" style="Header"><rml:control-source xml:space="preserve" type="Script" running-value="No">="Manpower Distribution as at "+  Format.formatDate(new java.util.Date(),"MMMM yyyy");</rml:control-source>
+        </rml:field>
+        <rml:ruler>
+        </rml:ruler>
+      </rml:section-header>
+      <rml:section-footer table-of-contents="No" height="940" style="">
+        <rml:field auto-wrap="Yes" font-name="Times New Roman" font-color="rgb(153,153,153)" left="0" top="100" width="3600" height="300" style=""><rml:control-source xml:space="preserve" type="Script" running-value="No">="Report Prepared by " + Properties.getProperty("Name");</rml:control-source>
+        </rml:field>
+        <rml:field auto-wrap="Yes" name="Date" left="0" top="580" width="4339" height="359" style="page.text">
+          <rml:format type="Date/Time" min-integer-digits="1" max-integer-digits="12" min-fraction-digits="2" max-fraction-digits="2" grouping-used="Yes" grouping-size="3" decimal-separator-always-shown="Yes" date-format="Full" time-format="Short">
+          </rml:format><rml:control-source xml:space="preserve" type="Script" running-value="No">=new java.util.Date()</rml:control-source>
+        </rml:field>
+        <rml:field auto-wrap="Yes" text-align="Right" name="Page" left="7000" top="599" width="3040" height="340" style="page.text"><rml:control-source xml:space="preserve" type="Script" running-value="No">="Page ${#} of ${##}"</rml:control-source>
+        </rml:field>
+        <rml:ruler>
+        </rml:ruler>
+      </rml:section-footer>
+      <rml:page-header height="0" style="">
+        <rml:ruler>
+        </rml:ruler>
+      </rml:page-header>
+      <rml:page-footer height="0" style="">
+        <rml:ruler>
+        </rml:ruler>
+      </rml:page-footer>
+      <rml:detail table-of-contents="No" height="0" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No"></rml:control-source>
+        <rml:ruler>
+        </rml:ruler>
+      </rml:detail>
+      <rml:ruler>
+      </rml:ruler>
+    </rml:section>
+  </rml:sections>
+  <rml:sequence>
+    <rml:section-invocation section="Section 1" enabled="Yes">
+      <rml:parameters>
+      </rml:parameters>
+    </rml:section-invocation>
+  </rml:sequence>
+  <rml:rendering>
+    <rml:render-details mime-type="application/x-glint">
+      <rml:parameters><rml:param xml:space="preserve" key="Tree">No</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/vnd.ms-excel">
+      <rml:parameters><rml:param xml:space="preserve" key="Snap">No</rml:param><rml:param xml:space="preserve" key="Paged">No</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+      <rml:parameters>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/pdf">
+      <rml:parameters><rml:param xml:space="preserve" key="RenderAsImage">No</rml:param><rml:param xml:space="preserve" key="OwnerPassword"></rml:param><rml:param xml:space="preserve" key="CJKMappingURL"></rml:param><rml:param xml:space="preserve" key="AllowFillIn">No</rml:param><rml:param xml:space="preserve" key="AllowAssembly">No</rml:param><rml:param xml:space="preserve" key="Encryption">No</rml:param><rml:param xml:space="preserve" key="AllowModifyContents">No</rml:param><rml:param xml:space="preserve" key="RenderAsImageDPI"></rml:param><rml:param xml:space="preserve" key="EncryptionStrength">128 bits</rml:param><rml:param xml:space="preserve" key="AllowScreenReaders">No</rml:param><rml:param xml:space="preserve" key="AllowModifyAnnotations">No</rml:param><rml:param xml:space="preserve" key="BlankPageOnEmptyFile">No</rml:param><rml:param xml:space="preserve" key="AllowDegradedPrinting">No</rml:param><rml:param xml:space="preserve" key="AllowCopy">No</rml:param><rml:param xml:space="preserve" key="AllowPrinting">No</rml:param><rml:param xml:space="preserve" key="UserPassword"></rml:param><rml:param xml:space="preserve" key="Greyscale">No</rml:param><rml:param xml:space="preserve" key="RenderTextAPI">Yes</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+  </rml:rendering></rml:report>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ds:datasource xmlns:ds="http://www.elixirtech.com/DataSource" name="Thailand Population" type="XBase" path="/ElixirSamples/Report/RML/datasource/Thailand Population.ds" description="">
+  <ds:schema case-sensitive="Yes">
+    <ds:column name="FIPS_ADMIN" type="String" />
+    <ds:column name="GMI_ADMIN" type="String" />
+    <ds:column name="ADMIN_NAME" type="String" />
+    <ds:column name="FIPS_CNTRY" type="String" />
+    <ds:column name="GMI_CNTRY" type="String" />
+    <ds:column name="CNTRY_NAME" type="String" />
+    <ds:column name="REGION" type="String" />
+    <ds:column name="CONTINENT" type="String" />
+    <ds:column name="POP_ADMIN" type="Double" />
+    <ds:column name="SQKM_ADMIN" type="Double" />
+    <ds:column name="SQMI_ADMIN" type="Double" />
+    <ds:column name="TYPE_ENG" type="String" />
+    <ds:column name="TYPE_LOC" type="String" />
+    <ds:column name="COLOR_MAP" type="String" />
+  </ds:schema>
+  <ds:security name="" />
+  <ds:xbase url="repository:/ElixirSamples/Report/RML/resource/data/thailand.dbf" />
+</ds:datasource>
+

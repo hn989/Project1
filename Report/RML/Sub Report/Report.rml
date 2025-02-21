@@ -1,0 +1,338 @@
+<?xml version="1.0" standalone="yes"?>
+
+<rml:report keep-page-count="Yes" cache-all-properties="Yes" grid-enabled="Yes" grid-visible="No" grid-x="100" grid-y="100" description="" disable-csv-auto-wrap="No" disable-excel-auto-wrap="No" style="" xmlns:rml="http://www.elixirtech.com/ElixirReport/RML">
+  <rml:metadata version="2" location="/ElixirSamples/Report/RML/Sub Report/Report.rml">
+  </rml:metadata>
+  <rml:security encrypted="No" read-only="No" hide-internals="No">
+  </rml:security><rml:function-definitions xml:space="preserve" language="javascript">var sumofval =0;</rml:function-definitions>
+  <rml:layout-master-set>
+    <rml:page-setup name="Default" paper="iso-a4" page-width="11905" page-height="16837" orientation="Portrait" horizontal-page-count="1" margin-top="1440" margin-left="1440" margin-bottom="1440" margin-right="1440" column-count="1" column-spacing="0" row-spacing="0" column-layout="Down Then Across">
+    </rml:page-setup>
+  </rml:layout-master-set>
+  <rml:parameters>
+  </rml:parameters>
+  <rml:datasources>
+    <rml:datasource name="Default" datasource-name="/ElixirSamples/Report/RML/Sub Report/datasource/CustomerOrders.ds" tabulate="Yes">
+      <rml:parameters>
+      </rml:parameters>
+      <rml:filters>
+      </rml:filters>
+    </rml:datasource>
+    <rml:datasource name="FilteredOrderDetails" datasource-name="/ElixirSamples/Report/RML/Sub Report/datasource/FilteredOrderDetails.ds" tabulate="Yes">
+      <rml:parameters><rml:param xml:space="preserve" key="OrderID">=ID</rml:param>
+      </rml:parameters>
+      <rml:filters>
+      </rml:filters>
+    </rml:datasource>
+  </rml:datasources>
+  <rml:styles>
+    <rml:style name="detail">
+      <rml:item name="Common.KeepTogether" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="field">
+      <rml:item name="Grid.AutoWrap" value="No">
+      </rml:item>
+      <rml:item name="TextElement.FontSize" value="240">
+      </rml:item>
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="TextElement.FontName" value="Serif">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="field.literal" base-name="field">
+      <rml:item name="RawElement.Growable" value="No">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="No">
+      </rml:item>
+    </rml:style>
+    <rml:style name="group-footer">
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="group-header">
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="page.label">
+      <rml:item name="TextElement.FontSize" value="240">
+      </rml:item>
+      <rml:item name="TextElement.FontUnderline" value="No">
+      </rml:item>
+      <rml:item name="TextElement.FontName" value="Serif">
+      </rml:item>
+      <rml:item name="TextElement.FontBold" value="Yes">
+      </rml:item>
+      <rml:item name="TextElement.FontColor" value="Black">
+      </rml:item>
+      <rml:item name="TextElement.FontItalic" value="No">
+      </rml:item>
+    </rml:style>
+    <rml:style name="page.text">
+      <rml:item name="TextElement.FontSize" value="240">
+      </rml:item>
+      <rml:item name="TextElement.FontUnderline" value="No">
+      </rml:item>
+      <rml:item name="TextElement.FontBold" value="No">
+      </rml:item>
+      <rml:item name="TextElement.FontName" value="Serif">
+      </rml:item>
+      <rml:item name="TextElement.FontColor" value="Black">
+      </rml:item>
+      <rml:item name="TextElement.FontItalic" value="No">
+      </rml:item>
+    </rml:style>
+    <rml:style name="rect">
+      <rml:item name="RawElement.BorderStyle" value="Solid">
+      </rml:item>
+      <rml:item name="Rectangle.BorderTop" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.BorderColor" value="rgb(0,0,0)">
+      </rml:item>
+      <rml:item name="Rectangle.BorderBottom" value="Yes">
+      </rml:item>
+      <rml:item name="Common.BackgroundColor" value="rgb(255,255,255)">
+      </rml:item>
+      <rml:item name="Rectangle.BorderRight" value="Yes">
+      </rml:item>
+      <rml:item name="Rectangle.BorderLeft" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="section.label">
+      <rml:item name="TextElement.FontSize" value="400">
+      </rml:item>
+      <rml:item name="TextElement.FontUnderline" value="No">
+      </rml:item>
+      <rml:item name="TextElement.FontBold" value="Yes">
+      </rml:item>
+      <rml:item name="TextElement.FontName" value="Serif">
+      </rml:item>
+      <rml:item name="TextElement.FontColor" value="Black">
+      </rml:item>
+      <rml:item name="TextElement.FontItalic" value="No">
+      </rml:item>
+    </rml:style>
+    <rml:style name="section.text">
+      <rml:item name="TextElement.FontSize" value="400">
+      </rml:item>
+      <rml:item name="TextElement.FontUnderline" value="No">
+      </rml:item>
+      <rml:item name="TextElement.FontName" value="Serif">
+      </rml:item>
+      <rml:item name="TextElement.FontBold" value="No">
+      </rml:item>
+      <rml:item name="TextElement.FontColor" value="Black">
+      </rml:item>
+      <rml:item name="TextElement.FontItalic" value="No">
+      </rml:item>
+    </rml:style>
+    <rml:style name="simple.label">
+      <rml:item name="RawElement.BorderStyle" value="Solid">
+      </rml:item>
+      <rml:item name="RawElement.BorderColor" value="rgb(0,0,0)">
+      </rml:item>
+      <rml:item name="TextElement.FontSize" value="240">
+      </rml:item>
+      <rml:item name="RawElement.BorderWidth" value="20">
+      </rml:item>
+      <rml:item name="Rectangle.BorderBottom" value="Yes">
+      </rml:item>
+      <rml:item name="TextElement.FontBold" value="Yes">
+      </rml:item>
+      <rml:item name="Rectangle.BorderRight" value="Yes">
+      </rml:item>
+      <rml:item name="TextElement.TextAlign" value="Center">
+      </rml:item>
+      <rml:item name="TextElement.FontItalic" value="No">
+      </rml:item>
+      <rml:item name="Rectangle.BorderTop" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="Common.BackgroundColor" value="rgb(204,204,204)">
+      </rml:item>
+      <rml:item name="TextElement.FontName" value="Serif">
+      </rml:item>
+      <rml:item name="Rectangle.BorderLeft" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="simple.text">
+      <rml:item name="RawElement.BorderStyle" value="Solid">
+      </rml:item>
+      <rml:item name="RawElement.BorderColor" value="rgb(0,0,0)">
+      </rml:item>
+      <rml:item name="TextElement.FontSize" value="240">
+      </rml:item>
+      <rml:item name="RawElement.PaddingTop" value="0">
+      </rml:item>
+      <rml:item name="RawElement.PaddingRight" value="40">
+      </rml:item>
+      <rml:item name="RawElement.BorderWidth" value="20">
+      </rml:item>
+      <rml:item name="Rectangle.BorderBottom" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.PaddingLeft" value="40">
+      </rml:item>
+      <rml:item name="TextElement.FontBold" value="No">
+      </rml:item>
+      <rml:item name="Rectangle.BorderRight" value="Yes">
+      </rml:item>
+      <rml:item name="TextElement.FontItalic" value="No">
+      </rml:item>
+      <rml:item name="Rectangle.BorderTop" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="TextElement.FontName" value="Serif">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.PaddingBottom" value="0">
+      </rml:item>
+      <rml:item name="Rectangle.BorderLeft" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="sub-report">
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+    </rml:style>
+    <rml:style name="table">
+      <rml:item name="RawElement.Growable" value="Yes">
+      </rml:item>
+      <rml:item name="RawElement.Shrinkable" value="Yes">
+      </rml:item>
+    </rml:style>
+  </rml:styles>
+  <rml:stylesheets>
+  </rml:stylesheets>
+  <rml:sections>
+    <rml:section name="Section 1" page-setup-ref="Default" data-source="FilteredOrderDetails" border-style="None" border-color="Black" show-header="Yes" show-footer="No" show-page-header="Yes" show-page-footer="Yes" keep-blank-pages="No" reset-page-count="No" style="">
+      <rml:watermark report="" section="" enabled="No">
+        <rml:parameters>
+        </rml:parameters>
+      </rml:watermark>
+      <rml:section-header table-of-contents="No" can-grow="Yes" can-shrink="Yes" height="1139" fill="No" style="Default"><rml:on-render-end xml:space="preserve" language="javascript">sumofval=0;</rml:on-render-end><rml:control-source xml:space="preserve" type="Literal" running-value="No"></rml:control-source>
+        <rml:field auto-wrap="No" text-align="Center" font-name="Dialog" font-size="360" font-bold="Yes" font-color="rgb(255,255,255)" name="Orders" left="0" top="0" width="9025" height="540" border-style="Solid" border-width="60" border-color="rgb(153,153,153)" border-left="Yes" border-right="Yes" border-top="Yes" border-bottom="Yes" border-radius="40" background-color="rgb(153,153,153)" can-grow="No" style="section.label"><rml:control-source xml:space="preserve" type="Literal" running-value="No">Customer Orders</rml:control-source>
+        </rml:field>
+        <rml:hbox visible="Yes" left="0" top="700" width="9025" height="400" fill="Yes" style="">
+          <rml:cell weight="75" left="0" top="700" width="1167" height="400" fill="Yes" style="">
+            <rml:field auto-wrap="No" font-name="Dialog" font-size="220" font-bold="No" font-color="rgb(255,255,255)" vertical-align="Center" name="ID" left="0" top="700" width="1167" height="400" border-color="rgb(255,255,255)" border-left="No" border-right="Yes" border-top="No" border-bottom="No" background-color="rgb(102,102,255)" style="simple.label"><rml:control-source xml:space="preserve" type="Literal" running-value="No">ID</rml:control-source>
+            </rml:field>
+          </rml:cell>
+          <rml:cell weight="135" left="1167" top="700" width="2100" height="400" fill="Yes" style="">
+            <rml:field auto-wrap="No" font-name="Dialog" font-size="220" font-bold="No" font-color="rgb(255,255,255)" vertical-align="Center" name="CUSTOMERID" left="1167" top="700" width="2100" height="400" border-color="rgb(255,255,255)" border-left="No" border-right="Yes" border-top="No" border-bottom="No" background-color="rgb(102,102,255)" style="simple.label"><rml:control-source xml:space="preserve" type="Literal" running-value="No">CUSTOMERID</rml:control-source>
+            </rml:field>
+          </rml:cell>
+          <rml:cell weight="190" left="3267" top="700" width="2956" height="400" fill="Yes" style="">
+            <rml:field auto-wrap="No" font-name="Dialog" font-size="220" font-bold="No" font-color="rgb(255,255,255)" vertical-align="Center" name="COMPANY" left="3267" top="700" width="2956" height="400" border-color="rgb(255,255,255)" border-left="No" border-right="Yes" border-top="No" border-bottom="No" background-color="rgb(102,102,255)" can-grow="No" style="simple.label"><rml:control-source xml:space="preserve" type="Literal" running-value="No">COMPANY</rml:control-source>
+            </rml:field>
+          </rml:cell>
+          <rml:cell weight="180" left="6223" top="700" width="2802" height="400" fill="Yes" style="">
+            <rml:field auto-wrap="Yes" font-name="Dialog" font-size="220" font-bold="No" font-color="rgb(255,255,255)" vertical-align="Center" name="DATE" left="6223" top="700" width="2802" height="400" border-left="No" border-right="No" border-top="No" border-bottom="No" background-color="rgb(102,102,255)" can-grow="No" style="simple.label"><rml:control-source xml:space="preserve" type="Literal" running-value="No">DATE</rml:control-source>
+            </rml:field>
+          </rml:cell>
+        </rml:hbox>
+        <rml:ruler>
+        </rml:ruler>
+      </rml:section-header>
+      <rml:section-footer table-of-contents="No" can-grow="Yes" can-shrink="Yes" height="0" style="">
+        <rml:ruler>
+        </rml:ruler>
+      </rml:section-footer>
+      <rml:page-header height="0" style="">
+        <rml:ruler>
+        </rml:ruler>
+      </rml:page-header>
+      <rml:page-footer height="460" style="">
+        <rml:hbox left="0" top="0" width="9025" height="460" fill="Yes" style="">
+          <rml:cell weight="410" left="0" top="0" width="6271" height="460" style="">
+            <rml:field auto-wrap="No" name="Date" left="0" top="0" width="6271" height="460" style="page.text">
+              <rml:format type="Date/Time" min-integer-digits="1" max-integer-digits="12" min-fraction-digits="2" max-fraction-digits="2" grouping-used="Yes" grouping-size="3" decimal-separator-always-shown="Yes" date-format="Full" time-format="Short">
+              </rml:format><rml:control-source xml:space="preserve" type="Script" field="Date" running-value="No">new java.util.Date()</rml:control-source>
+            </rml:field>
+          </rml:cell>
+          <rml:cell weight="180" left="6271" top="0" width="2754" height="460" style="">
+            <rml:field auto-wrap="No" text-align="Right" name="Page" left="6271" top="0" width="2754" height="460" style="page.text"><rml:control-source xml:space="preserve" type="Script" field="Page" running-value="No">"${#} of ${##}"</rml:control-source>
+            </rml:field>
+          </rml:cell>
+        </rml:hbox>
+        <rml:ruler>
+        </rml:ruler>
+      </rml:page-footer>
+      <rml:detail table-of-contents="No" can-grow="Yes" can-shrink="Yes" height="1640" fill="No" style="Default"><rml:control-source xml:space="preserve" type="Literal" running-value="No"></rml:control-source>
+        <rml:hbox visible="Yes" left="0" top="0" width="9025" height="400" fill="Yes" style="">
+          <rml:cell weight="75" left="0" top="0" width="1167" height="400" fill="Yes" style="">
+            <rml:field auto-wrap="No" text-align="Center" font-name="Serif" font-size="220" font-bold="No" font-color="rgb(0,0,0)" vertical-align="Center" name="ID" left="0" top="0" width="1167" height="400" border-color="rgb(102,102,255)" border-left="Yes" border-right="Yes" border-top="Yes" border-bottom="No" background-color="rgb(255,255,255)" can-grow="No" can-shrink="No" style="simple.text"><rml:control-source xml:space="preserve" type="Field" datasource="Default" field="ID" running-value="No">Default:ID</rml:control-source>
+            </rml:field>
+          </rml:cell>
+          <rml:cell weight="135" left="1167" top="0" width="2100" height="400" fill="Yes" style="">
+            <rml:field auto-wrap="No" text-align="Center" font-name="Serif" font-size="220" font-bold="No" font-color="rgb(0,0,0)" vertical-align="Center" name="CUSTOMERID" left="1167" top="0" width="2100" height="400" border-color="rgb(102,102,255)" border-left="No" border-right="Yes" border-top="Yes" border-bottom="No" background-color="rgb(255,255,255)" style="simple.text"><rml:control-source xml:space="preserve" type="Field" datasource="Default" field="CUSTOMERID" running-value="No">Default:CUSTOMERID</rml:control-source>
+            </rml:field>
+          </rml:cell>
+          <rml:cell weight="190" left="3267" top="0" width="2956" height="400" fill="Yes" style="">
+            <rml:field auto-wrap="No" text-align="Center" font-name="Serif" font-size="220" font-bold="No" font-color="rgb(0,0,0)" vertical-align="Center" name="COMPANY" left="3267" top="0" width="2956" height="400" border-color="rgb(102,102,255)" border-left="No" border-right="Yes" border-top="Yes" border-bottom="No" background-color="rgb(255,255,255)" style="simple.text"><rml:control-source xml:space="preserve" type="Field" datasource="Default" field="COMPANY" running-value="No">Default:COMPANY</rml:control-source>
+            </rml:field>
+          </rml:cell>
+          <rml:cell weight="180" left="6223" top="0" width="2802" height="400" fill="Yes" style="">
+            <rml:field auto-wrap="No" text-align="Center" font-name="Serif" font-size="220" font-bold="No" font-color="rgb(0,0,0)" vertical-align="Center" name="DATE" left="6223" top="0" width="2802" height="400" border-color="rgb(102,102,255)" border-left="No" border-top="Yes" border-bottom="No" background-color="rgb(255,255,255)" style="simple.text">
+              <rml:format type="Date/Time" min-integer-digits="1" max-integer-digits="12" min-fraction-digits="2" max-fraction-digits="2" grouping-used="Yes" grouping-size="3" decimal-separator-always-shown="Yes" date-format="Long" time-format="None">
+              </rml:format><rml:control-source xml:space="preserve" type="Field" datasource="Default" field="DATE" running-value="No">Default:DATE</rml:control-source>
+            </rml:field>
+          </rml:cell>
+        </rml:hbox>
+        <rml:sub-report report="/ElixirSamples/Report/RML/Sub Report/Sub Report.rml" section="Section 1" data-source="FilteredOrderDetails" left="0" top="400" width="9024" height="1240" background-color="" style=""><rml:on-render-begin xml:space="preserve" language="javascript">sumofval=0;</rml:on-render-begin>
+          <rml:parameters>
+          </rml:parameters>
+        </rml:sub-report>
+        <rml:ruler>
+        </rml:ruler>
+      </rml:detail>
+      <rml:ruler>
+      </rml:ruler>
+    </rml:section>
+  </rml:sections>
+  <rml:sequence>
+    <rml:section-invocation report="" section="Section 1" data-source="Default" enabled="Yes">
+      <rml:parameters>
+      </rml:parameters>
+    </rml:section-invocation>
+  </rml:sequence>
+  <rml:rendering>
+    <rml:render-details mime-type="application/x-glint">
+      <rml:parameters><rml:param xml:space="preserve" key="Tree">No</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/vnd.ms-excel">
+      <rml:parameters><rml:param xml:space="preserve" key="Snap">No</rml:param><rml:param xml:space="preserve" key="Paged">No</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="text/csv">
+      <rml:parameters><rml:param xml:space="preserve" key="Encoding">UTF-8</rml:param><rml:param xml:space="preserve" key="Qualifier">None</rml:param><rml:param xml:space="preserve" key="Separator">Comma</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/x-html-zip">
+      <rml:parameters><rml:param xml:space="preserve" key="Streamed">No</rml:param><rml:param xml:space="preserve" key="TreeNormalColor"></rml:param><rml:param xml:space="preserve" key="Tree">No</rml:param><rml:param xml:space="preserve" key="Paged">Yes</rml:param><rml:param xml:space="preserve" key="SVGPassThrough">No</rml:param><rml:param xml:space="preserve" key="Sectioned">No</rml:param><rml:param xml:space="preserve" key="TreeHighlightColor"></rml:param><rml:param xml:space="preserve" key="SkipHeaders">No</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="text/html">
+      <rml:parameters><rml:param xml:space="preserve" key="SkipHeaders">No</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/pdf">
+      <rml:parameters><rml:param xml:space="preserve" key="RenderAsImage">No</rml:param><rml:param xml:space="preserve" key="OwnerPassword"></rml:param><rml:param xml:space="preserve" key="CJKMappingURL"></rml:param><rml:param xml:space="preserve" key="AllowFillIn">No</rml:param><rml:param xml:space="preserve" key="AllowAssembly">No</rml:param><rml:param xml:space="preserve" key="Encryption">No</rml:param><rml:param xml:space="preserve" key="AllowModifyContents">No</rml:param><rml:param xml:space="preserve" key="RenderAsImageDPI"></rml:param><rml:param xml:space="preserve" key="EncryptionStrength">128 bits</rml:param><rml:param xml:space="preserve" key="AllowScreenReaders">No</rml:param><rml:param xml:space="preserve" key="AllowModifyAnnotations">No</rml:param><rml:param xml:space="preserve" key="BlankPageOnEmptyFile">No</rml:param><rml:param xml:space="preserve" key="AllowDegradedPrinting">No</rml:param><rml:param xml:space="preserve" key="AllowCopy">No</rml:param><rml:param xml:space="preserve" key="UserPassword"></rml:param><rml:param xml:space="preserve" key="AllowPrinting">No</rml:param><rml:param xml:space="preserve" key="Greyscale">No</rml:param><rml:param xml:space="preserve" key="RenderTextAPI">Yes</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+  </rml:rendering></rml:report>
+

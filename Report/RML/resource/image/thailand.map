@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+
+<map:mapfile background-color="rgb(153,255,153)" foreground-color="White" line-color="Blue" coloring-algorithm="image(repository:/ElixirSamples/Report/RML/resource/image/spectrum.png)" start-at-zero="No" map-key="GMI_ADMIN" xmlns:map="http://www.elixirtech.com/ElixirRepertoire/Map">
+  <map:legend location="None" type="Discrete" sort="Ascending" border-color="Black" background-color="White" continuous-range="No">
+    <map:font font-family="SansSerif" font-bold="No" font-italic="No" font-color="Black" font-size="12">
+    </map:font>
+    <map:format type="None" min-integer-digits="1" max-integer-digits="12" min-fraction-digits="2" max-fraction-digits="2" grouping-used="Yes" grouping-size="3" decimal-separator-always-shown="Yes" date-format="Short" time-format="Short">
+    </map:format>
+  </map:legend><map:title xml:space="preserve" location="North"><map:font font-family="SansSerif" font-bold="Yes" font-italic="No" font-color="rgb(102,102,102)" font-size="20"></map:font>Thailand Map</map:title>
+  <map:metadata version="1" location="/ElixirSamples/Report/RML/resource/image/thailand.map">
+  </map:metadata>
+  <map:security encrypted="No" read-only="No" hide-internals="No">
+  </map:security>
+  <map:shapefile shp-url="repository:/ElixirSamples/Report/RML/resource/image/thailand.shp">
+  </map:shapefile>
+  <map:layers>
+  </map:layers>
+  <map:parameters>
+  </map:parameters></map:mapfile>
+

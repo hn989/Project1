@@ -1,0 +1,226 @@
+<?xml version="1.0" standalone="yes"?>
+
+<rml:report keep-page-count="Yes" cache-all-properties="Yes" grid-enabled="Yes" grid-visible="No" grid-x="100" grid-y="100" description="" disable-csv-auto-wrap="No" disable-excel-auto-wrap="No" style="" xmlns:rml="http://www.elixirtech.com/ElixirReport/RML">
+  <rml:metadata version="2" location="/ElixirSamples/Report/RML/SVG Report.rml">
+  </rml:metadata>
+  <rml:security encrypted="No" read-only="No" hide-internals="No">
+  </rml:security><rml:function-definitions xml:space="preserve" language="javascript"></rml:function-definitions><rml:on-render-begin xml:space="preserve" language="javascript">var Left;
+</rml:on-render-begin>
+  <rml:layout-master-set>
+    <rml:page-setup name="Default" paper="iso-a4" page-width="11894" page-height="16833" orientation="Portrait" horizontal-page-count="1" margin-top="720" margin-left="360" margin-bottom="720" margin-right="360" column-count="1" column-spacing="0" row-spacing="0" column-layout="Across Then Down">
+    </rml:page-setup>
+  </rml:layout-master-set>
+  <rml:parameters>
+  </rml:parameters>
+  <rml:datasources>
+    <rml:datasource name="DataSource 1" datasource-name="/ElixirSamples/Report/RML/datasource/car.ds" tabulate="No">
+      <rml:parameters>
+      </rml:parameters>
+      <rml:filters>
+      </rml:filters>
+    </rml:datasource>
+  </rml:datasources>
+  <rml:styles>
+  </rml:styles>
+  <rml:stylesheets>
+  </rml:stylesheets>
+  <rml:sections>
+    <rml:section name="Section 1" page-setup-ref="Default" data-source="DataSource 1" show-header="Yes" show-footer="No" show-page-header="No" show-page-footer="Yes" keep-blank-pages="No" reset-page-count="No" style="">
+      <rml:watermark report="" section="" enabled="No">
+        <rml:parameters>
+        </rml:parameters>
+      </rml:watermark>
+      <rml:section-header table-of-contents="No" caption="Report Header" force-new-page="None" keep-together="Yes" visible="Yes" can-grow="No" can-shrink="No" height="4740" vertical-align="Top" style=""><rml:on-render-begin xml:space="preserve" language="javascript">Left=false;</rml:on-render-begin><rml:control-source xml:space="preserve" type="Literal" running-value="No"></rml:control-source>
+        <rml:image size-mode="Clip" visible="Yes" left="0" top="380" width="11173" height="2936" lock-handles="No" style=""><rml:control-source xml:space="preserve" type="URL" running-value="No" url="repository:/ElixirSamples/Report/RML/resource/image/car-image/grapeauto_header.png" url-type="Image"></rml:control-source><rml:script xml:space="preserve"></rml:script>
+        </rml:image>
+        <rml:ruler>
+        </rml:ruler>
+      </rml:section-header>
+      <rml:section-footer table-of-contents="No" caption="Report Footer" force-new-page="None" keep-together="Yes" visible="No" can-grow="No" can-shrink="No" height="2880" vertical-align="Top" style="">
+        <rml:ruler>
+        </rml:ruler>
+      </rml:section-footer>
+      <rml:page-header caption="Page Header" visible="Yes" height="0" style="">
+        <rml:ruler>
+        </rml:ruler>
+      </rml:page-header>
+      <rml:page-footer caption="Page Footer" visible="Yes" height="500" style="">
+        <rml:image size-mode="Zoom" visible="Yes" left="0" top="0" width="2420" height="499" lock-handles="No" style=""><rml:control-source xml:space="preserve" type="URL" running-value="No" url="repository:/ElixirSamples/Report/RML/resource/image/car-image/grapeautologo.png" url-type="Image"></rml:control-source><rml:script xml:space="preserve"></rml:script>
+        </rml:image>
+        <rml:field hide-duplicates="No" auto-wrap="Yes" text-align="Center" font-name="Serif" font-size="360" font-bold="No" font-italic="No" font-underline="No" font-color="Black" vertical-align="Top" url="" url-description="" visible="Yes" left="4700" top="0" width="2000" height="500" can-grow="No" can-shrink="No" lock-handles="Yes" style=""><rml:control-source xml:space="preserve" type="Script" running-value="No">="${#}"</rml:control-source>
+        </rml:field>
+        <rml:field auto-wrap="Yes" text-align="Right" font-name="Dialog" font-size="280" font-bold="No" font-italic="No" font-underline="No" font-color="Blue" vertical-align="Top" url="" url-description="" visible="Yes" left="6760" top="0" width="4240" height="499" lock-handles="No" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">http://www.grapeauto.com/</rml:control-source>
+        </rml:field>
+        <rml:ruler>
+        </rml:ruler>
+      </rml:page-footer>
+      <rml:detail table-of-contents="Yes" caption="Detail" force-new-page="None" keep-together="Yes" visible="Yes" can-grow="Yes" can-shrink="No" height="4620" vertical-align="Top" style=""><rml:render-if xml:space="preserve" language="javascript"></rml:render-if><rml:on-render-end xml:space="preserve" language="javascript">if(Left==false){
+Left=true;
+}else{
+Left=false;
+}
+</rml:on-render-end><rml:control-source xml:space="preserve" type="Field" field="NAME" running-value="No">NAME</rml:control-source>
+        <rml:svg location="repository:/ElixirSamples/Report/RML/resource/image/car-image/carsvg2.svg" visible="Yes" left="480" top="140" width="10500" height="4200" lock-handles="No" style=""><rml:on-render-begin xml:space="preserve" language="javascript">if(Left)
+setVisible(false);
+else
+setVisible(true);
+</rml:on-render-begin>
+        </rml:svg>
+        <rml:svg location="repository:/ElixirSamples/Report/RML/resource/image/car-image/carsvg.svg" fill="Yes" left="480" top="140" width="10500" height="4200" lock-handles="No" style=""><rml:on-render-begin xml:space="preserve" language="javascript">if(Left)
+setVisible(true);
+else
+setVisible(false);</rml:on-render-begin>
+        </rml:svg>
+        <rml:vbox left="1180" top="2040" width="5819" height="1778" lock-handles="No" style=""><rml:on-render-begin xml:space="preserve" language="javascript">if(Left){
+setLeft(getLeft()-3*1440);
+}else{
+setLeft(getLeft()+2.9*1440);
+}
+layoutCells();</rml:on-render-begin>
+          <rml:cell weight="100" left="1180" top="2040" width="5819" height="296" style="">
+            <rml:hbox left="1180" top="2040" width="5819" height="296" style=""><rml:on-render-begin xml:space="preserve" language="javascript">layoutCells();</rml:on-render-begin>
+              <rml:cell weight="8484" left="1180" top="2040" width="2631" height="296" style="">
+                <rml:field auto-wrap="Yes" text-align="Left" font-name="Serif" font-size="200" font-bold="No" font-italic="No" font-underline="No" font-color="Black" vertical-align="Top" url="" url-description="" visible="Yes" left="1180" top="2040" width="2631" height="296" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Model Year</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="10280" left="3811" top="2040" width="3188" height="296" style="">
+                <rml:field hide-duplicates="No" auto-wrap="Yes" text-align="Left" font-name="Serif" font-size="200" font-bold="No" font-italic="No" font-underline="No" font-color="Black" vertical-align="Top" url="" url-description="" visible="Yes" left="3811" top="2040" width="3188" height="296" can-grow="No" can-shrink="No" style=""><rml:control-source xml:space="preserve" type="Field" field="YEAR" running-value="No">YEAR</rml:control-source>
+                </rml:field>
+              </rml:cell>
+            </rml:hbox>
+          </rml:cell>
+          <rml:cell weight="100" left="1180" top="2336" width="5819" height="296" style="">
+            <rml:hbox left="1180" top="2336" width="5819" height="296" style=""><rml:on-render-begin xml:space="preserve" language="javascript">layoutCells();</rml:on-render-begin>
+              <rml:cell weight="8484" left="1180" top="2336" width="2631" height="296" style="">
+                <rml:field auto-wrap="Yes" text-align="Left" font-name="Serif" font-size="200" font-bold="No" font-italic="No" font-underline="No" font-color="Black" vertical-align="Top" url="" url-description="" visible="Yes" left="1180" top="2336" width="2631" height="296" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Type</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="10280" left="3811" top="2336" width="3188" height="296" style="">
+                <rml:field hide-duplicates="No" auto-wrap="Yes" text-align="Left" font-name="Serif" font-size="200" font-bold="No" font-italic="No" font-underline="No" font-color="Black" vertical-align="Top" url="" url-description="" visible="Yes" left="3811" top="2336" width="3188" height="296" can-grow="No" can-shrink="No" style=""><rml:control-source xml:space="preserve" type="Field" field="TYPE" running-value="No">TYPE</rml:control-source>
+                </rml:field>
+              </rml:cell>
+            </rml:hbox>
+          </rml:cell>
+          <rml:cell weight="100" left="1180" top="2632" width="5819" height="296" style="">
+            <rml:hbox left="1180" top="2632" width="5819" height="296" style=""><rml:on-render-begin xml:space="preserve" language="javascript">layoutCells();</rml:on-render-begin>
+              <rml:cell weight="8484" left="1180" top="2632" width="2631" height="296" style="">
+                <rml:field auto-wrap="Yes" text-align="Left" font-name="Serif" font-size="200" font-bold="No" font-italic="No" font-underline="No" font-color="Black" vertical-align="Top" url="" url-description="" visible="Yes" left="1180" top="2632" width="2631" height="296" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Travelled Distance</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="10280" left="3811" top="2632" width="3188" height="296" style="">
+                <rml:field hide-duplicates="No" auto-wrap="Yes" text-align="Left" font-name="Serif" font-size="200" font-bold="No" font-italic="No" font-underline="No" font-color="Black" vertical-align="Top" url="" url-description="" visible="Yes" left="3811" top="2632" width="3188" height="296" can-grow="No" can-shrink="No" style="">
+                  <rml:format type="Number" min-integer-digits="1" max-integer-digits="12" min-fraction-digits="2" max-fraction-digits="2" grouping-used="Yes" grouping-size="3" decimal-separator-always-shown="Yes" custom-pattern="#,##0.### KM" date-format="Short" time-format="Short">
+                  </rml:format><rml:control-source xml:space="preserve" type="Field" field="KM" running-value="No">KM</rml:control-source>
+                </rml:field>
+              </rml:cell>
+            </rml:hbox>
+          </rml:cell>
+          <rml:cell weight="100" left="1180" top="2928" width="5819" height="296" style="">
+            <rml:hbox left="1180" top="2928" width="5819" height="296" style=""><rml:on-render-begin xml:space="preserve" language="javascript">layoutCells();</rml:on-render-begin>
+              <rml:cell weight="8484" left="1180" top="2928" width="2631" height="296" style="">
+                <rml:field auto-wrap="Yes" text-align="Left" font-name="Serif" font-size="200" font-bold="No" font-italic="No" font-underline="No" font-color="Black" vertical-align="Top" url="" url-description="" visible="Yes" left="1180" top="2928" width="2631" height="296" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Inspection</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="10280" left="3811" top="2928" width="3188" height="296" style="">
+                <rml:field hide-duplicates="No" auto-wrap="Yes" text-align="Left" font-name="Serif" font-size="200" font-bold="No" font-italic="No" font-underline="No" font-color="Black" vertical-align="Top" url="" url-description="" visible="Yes" left="3811" top="2928" width="3188" height="296" can-grow="No" can-shrink="No" style=""><rml:control-source xml:space="preserve" type="Field" field="INSPECTIONDATE" running-value="No">INSPECTIONDATE</rml:control-source>
+                </rml:field>
+              </rml:cell>
+            </rml:hbox>
+          </rml:cell>
+          <rml:cell weight="100" left="1180" top="3224" width="5819" height="297" style="">
+            <rml:hbox left="1180" top="3224" width="5819" height="297" style=""><rml:on-render-begin xml:space="preserve" language="javascript">layoutCells();</rml:on-render-begin>
+              <rml:cell weight="8484" left="1180" top="3224" width="2631" height="297" style="">
+                <rml:field auto-wrap="Yes" text-align="Left" font-name="Serif" font-size="200" font-bold="No" font-italic="No" font-underline="No" font-color="Black" vertical-align="Top" url="" url-description="" visible="Yes" left="1180" top="3224" width="2631" height="297" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Gear System</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="10280" left="3811" top="3224" width="3188" height="297" style="">
+                <rml:field hide-duplicates="No" auto-wrap="Yes" text-align="Left" font-name="Serif" font-size="200" font-bold="No" font-italic="No" font-underline="No" font-color="Black" vertical-align="Top" url="" url-description="" visible="Yes" left="3811" top="3224" width="3188" height="297" can-grow="No" can-shrink="No" style=""><rml:control-source xml:space="preserve" type="Field" field="TRANSMISSION" running-value="No">TRANSMISSION</rml:control-source>
+                </rml:field>
+              </rml:cell>
+            </rml:hbox>
+          </rml:cell>
+          <rml:cell weight="100" left="1180" top="3521" width="5819" height="297" style="">
+            <rml:hbox left="1180" top="3521" width="5819" height="297" style=""><rml:on-render-begin xml:space="preserve" language="javascript">layoutCells();</rml:on-render-begin>
+              <rml:cell weight="8484" left="1180" top="3521" width="2631" height="297" style="">
+                <rml:field auto-wrap="Yes" text-align="Left" font-name="Serif" font-size="200" font-bold="No" font-italic="No" font-underline="No" font-color="Black" vertical-align="Top" url="" url-description="" visible="Yes" left="1180" top="3521" width="2631" height="297" style=""><rml:control-source xml:space="preserve" type="Literal" running-value="No">Color</rml:control-source>
+                </rml:field>
+              </rml:cell>
+              <rml:cell weight="10280" left="3811" top="3521" width="3188" height="297" style="">
+                <rml:field hide-duplicates="No" auto-wrap="Yes" text-align="Left" font-name="Serif" font-size="200" font-bold="No" font-italic="No" font-underline="No" font-color="Black" vertical-align="Top" url="" url-description="" visible="Yes" left="3811" top="3521" width="3188" height="297" can-grow="No" can-shrink="No" style=""><rml:control-source xml:space="preserve" type="Field" field="COLOR" running-value="No">COLOR</rml:control-source>
+                </rml:field>
+              </rml:cell>
+            </rml:hbox>
+          </rml:cell>
+        </rml:vbox>
+        <rml:vbox left="5900" top="600" width="3780" height="3260" lock-handles="No" style=""><rml:on-render-begin xml:space="preserve" language="javascript">if(Left){
+setLeft(4.1*1440);
+}else{
+setLeft(0.55*1440);
+}
+layoutCells();</rml:on-render-begin>
+          <rml:cell weight="17116" left="5900" top="600" width="3780" height="2789" style="">
+            <rml:image size-mode="Zoom" visible="Yes" left="5900" top="600" width="3780" height="2789" style=""><rml:control-source xml:space="preserve" type="Script" running-value="No">="repository:/ElixirSamples/Report/RML/resource/image/car-image/"+Data.getObject("IMAGE");</rml:control-source><rml:script xml:space="preserve"></rml:script>
+            </rml:image>
+          </rml:cell>
+          <rml:cell weight="2884" left="5900" top="3389" width="3780" height="471" style="">
+            <rml:field locale="ja_JP" hide-duplicates="No" auto-wrap="Yes" text-align="Center" font-name="Dialog" font-size="320" font-bold="Yes" font-italic="No" font-underline="No" font-color="Red" vertical-align="Top" url="" url-description="" visible="Yes" left="5900" top="3389" width="3780" height="471" can-grow="No" can-shrink="No" padding-right="0" style="">
+              <rml:format type="Currency" min-integer-digits="1" max-integer-digits="309" min-fraction-digits="0" max-fraction-digits="3" grouping-used="Yes" grouping-size="3" decimal-separator-always-shown="No" date-format="Short" time-format="Short">
+              </rml:format><rml:control-source xml:space="preserve" type="Field" field="PRICE" running-value="No">PRICE</rml:control-source>
+            </rml:field>
+          </rml:cell>
+        </rml:vbox>
+        <rml:vbox left="800" top="300" width="4779" height="1200" lock-handles="No" style=""><rml:on-render-begin xml:space="preserve" language="javascript">if(Left){
+setLeft(getLeft()-3*1440);
+}else{
+setLeft(getLeft()+3*1440);
+}
+layoutCells();</rml:on-render-begin>
+          <rml:cell weight="867" left="800" top="300" width="4779" height="1200" style="">
+            <rml:field hide-duplicates="No" auto-wrap="Yes" text-align="Left" font-name="Serif" font-size="320" font-bold="Yes" font-italic="No" font-underline="No" font-color="White" vertical-align="Center" url="" url-description="" visible="Yes" left="800" top="300" width="4779" height="1200" can-grow="No" can-shrink="No" style=""><rml:control-source xml:space="preserve" type="Field" field="MAKER" running-value="No">MAKER</rml:control-source>
+            </rml:field>
+          </rml:cell>
+        </rml:vbox>
+        <rml:ruler>
+          <rml:mark value="140">
+          </rml:mark>
+          <rml:mark value="4340">
+          </rml:mark>
+        </rml:ruler>
+      </rml:detail>
+      <rml:ruler>
+        <rml:mark value="480">
+        </rml:mark>
+        <rml:mark value="10980">
+        </rml:mark>
+      </rml:ruler>
+    </rml:section>
+  </rml:sections>
+  <rml:sequence>
+    <rml:section-invocation section="Section 1" enabled="Yes">
+      <rml:parameters>
+      </rml:parameters>
+    </rml:section-invocation>
+  </rml:sequence>
+  <rml:rendering>
+    <rml:render-details mime-type="application/rtf">
+      <rml:parameters><rml:param xml:space="preserve" key="Word2003">No</rml:param><rml:param xml:space="preserve" key="Company"></rml:param><rml:param xml:space="preserve" key="Comments"></rml:param><rml:param xml:space="preserve" key="Author"></rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/pdf">
+      <rml:parameters><rml:param xml:space="preserve" key="RenderAsImage">No</rml:param><rml:param xml:space="preserve" key="AllowScreenReaders">No</rml:param><rml:param xml:space="preserve" key="EncryptionStrength">128 bits</rml:param><rml:param xml:space="preserve" key="AllowDegradedPrinting">No</rml:param><rml:param xml:space="preserve" key="AllowCopy">No</rml:param><rml:param xml:space="preserve" key="UserPassword"></rml:param><rml:param xml:space="preserve" key="RenderTextAPI">Yes</rml:param><rml:param xml:space="preserve" key="Encryption">No</rml:param><rml:param xml:space="preserve" key="BlankPageOnEmptyFile">No</rml:param><rml:param xml:space="preserve" key="AllowModifyContents">No</rml:param><rml:param xml:space="preserve" key="OwnerPassword"></rml:param><rml:param xml:space="preserve" key="AllowFillIn">No</rml:param><rml:param xml:space="preserve" key="AllowPrinting">No</rml:param><rml:param xml:space="preserve" key="CJKMappingURL"></rml:param><rml:param xml:space="preserve" key="AllowModifyAnnotations">No</rml:param><rml:param xml:space="preserve" key="Greyscale">No</rml:param><rml:param xml:space="preserve" key="AllowAssembly">No</rml:param><rml:param xml:space="preserve" key="RenderAsImageDPI"></rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="text/csv">
+      <rml:parameters><rml:param xml:space="preserve" key="Encoding">UTF-8</rml:param><rml:param xml:space="preserve" key="Qualifier">None</rml:param><rml:param xml:space="preserve" key="Separator">Comma</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/x-glint">
+      <rml:parameters><rml:param xml:space="preserve" key="Tree">No</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+    <rml:render-details mime-type="application/vnd.ms-excel">
+      <rml:parameters><rml:param xml:space="preserve" key="Paged">Yes</rml:param><rml:param xml:space="preserve" key="Multiplier">52</rml:param><rml:param xml:space="preserve" key="Snap">No</rml:param>
+      </rml:parameters>
+    </rml:render-details>
+  </rml:rendering></rml:report>
+

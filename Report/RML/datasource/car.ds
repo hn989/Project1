@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ds:datasource xmlns:ds="http://www.elixirtech.com/DataSource" name="car" type="Text" path="/ElixirSamples/Report/RML/datasource/car.ds" description="">
+  <ds:schema case-sensitive="Yes">
+    <ds:column name="MAKER" type="String" />
+    <ds:column name="TYPE" type="String" />
+    <ds:column name="YEAR" type="String" />
+    <ds:column name="COLOR" type="String" />
+    <ds:column name="PRICE" type="Long" />
+    <ds:column name="KM" type="String" />
+    <ds:column name="INSPECTIONDATE" type="String" />
+    <ds:column name="TRANSMISSION" type="String" />
+    <ds:column name="IMAGE" type="String" />
+  </ds:schema>
+  <ds:security name="" />
+  <ds:text encoding="UTF-8" skip-first-row="Yes" url="repository:/ElixirSamples/Report/RML/resource/data/car.csv">
+    <ds:delimited delimiter="," qualifier="none" />
+  </ds:text>
+</ds:datasource>
+
