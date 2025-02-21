@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="yes"?>
 
 <rml:report keep-page-count="Yes" cache-all-properties="Yes" grid-enabled="Yes" grid-visible="No" grid-x="100" grid-y="100" description="Showing the features of Lebal, Image,Data Field, DataGrid, CheckBox, Line,Retangle and RTF" disable-csv-auto-wrap="No" disable-excel-auto-wrap="No" style="" xmlns:rml="http://www.elixirtech.com/ElixirReport/RML">
-  <rml:metadata version="2" location="/ElixirSamples/Report/RML/Copy of Form.rml">
+  <rml:metadata version="2" location="/Project1/Form.rml">
   </rml:metadata>
   <rml:security encrypted="No" read-only="No" hide-internals="No">
   </rml:security><rml:function-definitions xml:space="preserve" language="javascript"></rml:function-definitions>
@@ -9,7 +9,7 @@
     <rml:page-setup name="Default" paper="iso-a4" page-width="11905" page-height="16837" orientation="Portrait" horizontal-page-count="1" margin-top="520" margin-left="520" margin-bottom="520" margin-right="520" column-count="1" column-spacing="0" row-spacing="0" column-layout="Down Then Across">
     </rml:page-setup>
   </rml:layout-master-set>
-  <rml:parameters>
+  <rml:parameters><rml:param xml:space="preserve" key="elx-filename" enabled="Yes">${elx-filename##}</rml:param>
   </rml:parameters>
   <rml:datasources>
     <rml:datasource name="Barcode" datasource-name="/ElixirSamples/Report/RML/datasource/Barcode.ds" tabulate="Yes">
