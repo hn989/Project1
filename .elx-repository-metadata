@@ -1,0 +1,21 @@
+[
+  {
+    "path" : "/User/admin",
+    "tags" : [
+    ],
+    "acl" : [
+      {
+        "by" : "user-67e0202e01dd3f27ed7281b8",
+        "write" : true
+      }
+    ]
+  },
+  {
+    "path" : "/User/admin/hello.txt",
+    "tags" : [
+    ],
+    "acl" : [
+    ],
+    "lastModified" : 1742742465731
+  }
+]
