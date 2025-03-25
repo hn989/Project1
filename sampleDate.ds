@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ds:datasource xmlns:ds="http://www.elixirtech.com/DataSource" name="sampleDate" type="MongoDB" path="/CPFB-Reports/sampleDate.ds" description="">
+  <ds:parameter-cache />
+  <ds:schema case-sensitive="Yes">
+    <ds:column name="Index" type="Long" />
+    <ds:column name="_id" type="String" />
+    <ds:column name="date" type="String" />
+  </ds:schema>
+  <ds:mongodb pool="CPFB01" collection="sampleDate" />
+  <ds:security name="" />
+</ds:datasource>
+

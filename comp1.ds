@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ds:datasource xmlns:ds="http://www.elixirtech.com/DataSource" name="comp1" type="Composite" path="/CPFB-Reports/comp1.ds" description="" version="2">
+  <ds:parameter-cache />
+  <ds:schema case-sensitive="Yes">
+    <ds:column name="Index" type="Long" />
+    <ds:column name="_id" type="String" />
+    <ds:column name="date" type="String" />
+  </ds:schema>
+  <ds:security name="" />
+  <ds:composite />
+  <graph version="1.0">
+    <node id="0" class="com.elixirtech.ensemble.canvas.CompositeDiagram">
+      <property name="name" xml:space="preserve">Ensemble</property>
+      <property name="policy" xml:space="preserve">com.elixirtech.ensemble.canvas.EnsemblePolicy</property>
+    </node>
+    <node id="1" class="com.elixirtech.ensemble.canvas.ResultGO">
+      <property name="rect" xml:space="preserve">(605,110,685,150)</property>
+      <property name="minwidth" xml:space="preserve">60</property>
+      <property name="text" xml:space="preserve">Result</property>
+      <property name="fill" xml:space="preserve">Wheat</property>
+      <property name="minheight" xml:space="preserve">40</property>
+    </node>
+    <node id="2" class="com.elixirtech.ensemble.canvas.DataSourceGO">
+      <property name="rect" xml:space="preserve">(102,108,182,148)</property>
+      <property name="minwidth" xml:space="preserve">60</property>
+      <property name="text" xml:space="preserve">sampleDate</property>
+      <property name="fill" xml:space="preserve">Wheat</property>
+      <property name="minheight" xml:space="preserve">40</property>
+      <user-property name="DataSource_Discard" xml:space="preserve"></user-property>
+      <user-property name="DataSource" xml:space="preserve">/CPFB-Reports/sampleDate.ds</user-property>
+    </node>
+    <node id="3" class="com.elixirtech.ensemble.canvas.ProcessorGO">
+      <property name="rect" xml:space="preserve">(330,100,410,140)</property>
+      <property name="minwidth" xml:space="preserve">60</property>
+      <property name="text" xml:space="preserve">Processor</property>
+      <property name="fill" xml:space="preserve">Wheat</property>
+      <property name="minheight" xml:space="preserve">40</property>
+    </node>
+    <node id="4" class="com.elixirtech.data2.datasource.processor.transform.TransformNode">
+      <transform type="composite">
+        <transform type="sort">
+          <field name="date" sort="Descending" />
+        </transform>
+      </transform>
+    </node>
+    <node id="5" class="com.elixirtech.ensemble.canvas.DataFlowGO">
+      <property name="points" xml:space="preserve">(210,128)(302,120)</property>
+    </node>
+    <node id="6" class="com.elixirtech.ensemble.canvas.DataFlowGO">
+      <property name="points" xml:space="preserve">(438,120)(554,130)</property>
+    </node>
+    <relationship type="Owns" from="0" to="1" />
+    <relationship type="Owns" from="0" to="2" />
+    <relationship type="Owns" from="0" to="3" />
+    <relationship type="Owns" from="0" to="5" />
+    <relationship type="Owns" from="0" to="6" />
+    <relationship type="Repaints" from="1" to="6">
+      <user-property name="stop" xml:space="preserve">true</user-property>
+    </relationship>
+    <relationship type="Repaints" from="2" to="5">
+      <user-property name="start" xml:space="preserve">true</user-property>
+    </relationship>
+    <relationship type="Repaints" from="3" to="5">
+      <user-property name="stop" xml:space="preserve">true</user-property>
+    </relationship>
+    <relationship type="Repaints" from="3" to="6">
+      <user-property name="start" xml:space="preserve">true</user-property>
+    </relationship>
+    <relationship type="Owns" from="3" to="4" />
+  </graph>
+</ds:datasource>
+

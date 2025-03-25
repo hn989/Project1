@@ -1,21 +1,79 @@
 [
   {
-    "path" : "/User/admin",
+    "path" : "/CPFB-Reports",
     "tags" : [
     ],
     "acl" : [
       {
-        "by" : "user-67e0202e01dd3f27ed7281b8",
-        "write" : true
+        "by" : "role-67b4992cad53635606076339",
+        "write" : false
       }
     ]
   },
   {
-    "path" : "/User/admin/hello.txt",
+    "path" : "/CPFB-Reports/Folder1",
+    "tags" : [
+    ],
+    "acl" : [
+      {
+        "by" : "role-67b49914ad53635606076330",
+        "write" : false
+      }
+    ]
+  },
+  {
+    "path" : "/CPFB-Reports/Folder1/comp1.ds",
     "tags" : [
     ],
     "acl" : [
     ],
-    "lastModified" : 1742742465731
+    "lastModified" : 1742805894043
+  },
+  {
+    "path" : "/CPFB-Reports/Folder2",
+    "tags" : [
+    ],
+    "acl" : [
+      {
+        "by" : "role-67b4992cad53635606076339",
+        "write" : false
+      }
+    ]
+  },
+  {
+    "path" : "/CPFB-Reports/Folder2/comp1.ds",
+    "tags" : [
+    ],
+    "acl" : [
+    ],
+    "lastModified" : 1742805894026
+  },
+  {
+    "path" : "/CPFB-Reports/comp1.ds",
+    "tags" : [
+    ],
+    "acl" : [
+    ],
+    "lastModified" : 1742805894034
+  },
+  {
+    "path" : "/CPFB-Reports/customer.rml",
+    "tags" : [
+    ],
+    "acl" : [
+    ],
+    "lastModified" : 1742805894039
+  },
+  {
+    "path" : "/CPFB-Reports/sampleDate.ds",
+    "tags" : [
+    ],
+    "acl" : [
+      {
+        "by" : "role-67b49914ad53635606076330",
+        "write" : false
+      }
+    ],
+    "lastModified" : 1742805894030
   }
 ]
